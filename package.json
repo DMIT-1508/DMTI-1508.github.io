@@ -1,0 +1,21 @@
+{
+  "name": "dmit-1508.github.io",
+  "version": "1.5.0",
+  "main": "index.html",
+  "repository": "https://github.com/DMIT-1508/DMIT-1508.github.io.git",
+  "author": "Dan Gilleland <dgilleland@nait.ca>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "markdown-it-abbr": "^1.0.4",
+    "markdown-it-checkbox": "^1.1.0",
+    "markdown-it-deflist": "^2.0.3",
+    "markdown-it-footnote": "^3.0.1",
+    "markdown-it-imsize": "^2.0.1",
+    "markdown-it-kbd": "^1.1.1",
+    "markdown-it-mark": "^2.0.0",
+    "markdown-it-mermaid": "^0.2.5",
+    "markdown-it-sub": "^1.0.0",
+    "markdown-it-sup": "^1.0.0",
+    "vuepress": "^0.14.2"
+  }
+}
