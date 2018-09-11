@@ -43,11 +43,10 @@ module.exports = {
                 'primaryKey',
                 'foreignKey',
                 'defaultConstraint',
-                'checkContraint',
+                'checkConstraint',
                 'uniqueConstraint',
                 'alterTable',
-                'createView',
-                ''
+                'createView'
             ],
 
             '/DML/': [
