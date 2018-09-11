@@ -93,7 +93,7 @@ module.exports = {
             // fallback
             '/about/': [
                 '',
-                '/LOGs'
+                'LOGs'
                 // 'colophon',
                 // 'todo',
                 // 'markdown-syntax'
