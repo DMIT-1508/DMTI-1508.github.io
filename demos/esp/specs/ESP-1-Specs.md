@@ -15,7 +15,7 @@ Customer numbers are unique and are never reused by the company. A card is creat
 
 ESP has preprinted order forms that they fill in by hand when a customer buys some of their product. The customer details are copied from the customer card onto the order form as well as details about the product ordered. Each order form has a preprinted sequential order number that is unique. The top portion of the forms looks as follows:
 
-![Customer Orders View](./ESP-1-Customer-Orders-View.png)
+![Customer Orders View](./CustomerOrdersView.png)
 
 The forms are two part with carbon in between. The customer gets the top copy and ESP keeps the other. The ESP copy is filed by order number into a binder.
 
