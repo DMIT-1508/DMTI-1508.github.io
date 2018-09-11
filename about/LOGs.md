@@ -1,4 +1,7 @@
-# DMIT 1508 LOGs
+---
+title: LOGs
+---
+# Learning Outcome Guides (*LOGs*)
 
 ## Introduction to Databases
 
