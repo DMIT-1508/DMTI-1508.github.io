@@ -7,7 +7,7 @@ In the first document for ESP, two views were analyzed and ERDs generated for ea
 
 Customer Details View | Customer Orders View
 ----------------------|---------------------
-![](ESP-1-ERD-CustomerDetailsView.png) | ![](ESP-1-ERD-CustomerOrdersView.png)
+![](./ESP-1-ERD-CustomerDetailsView.png) | ![](./ESP-1-ERD-CustomerOrdersView.png)
 
 The **Customer** entity that appears in both ERDs is essentially the same, having only minor differences in the naming of some attributes. As such, merging the two ERDs produces the same result as the ERD from the *Customer Orders View*.
 
@@ -15,7 +15,7 @@ The ERD from the second document has some overlap and a more thoughtful merging 
 
 ESP Document 1 | Payment Log View
 ----------------------|---------------------
-![](ESP-1-ERD-CustomerOrdersView.png) | ![](ESP-2-ERD-PaymentLogView.png)
+![](./ESP-1-ERD-CustomerOrdersView.png) | ![](./ESP-2-ERD-PaymentLogView.png)
 
 The **Customer** entity from both ERDs are essentially the same. The second version of **Customer** appears to just be a subset of the first version, with some minor differences in attribute names. As such, the larger **Customer** entity will be used for the merged ERD.
 
@@ -23,4 +23,4 @@ The remaining entities from the two ERDs have different names, but upon closer e
 
 The final entities - **OrderDetail**, **Item**, and **PaymentLogDetails** - all appear to be distinct, so they will be included in the merged ERD as-is.
 
-![](Merge-ESP-1+2.png)
+![](./Merge-ESP-1+2.png)

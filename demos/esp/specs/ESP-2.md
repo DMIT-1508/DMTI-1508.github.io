@@ -9,13 +9,13 @@ The second specifications document for Emergency Service & Product (ESP) present
 
 The Customer Payments Against Orders and its resulting tables are based on the following form (taken from the original documentation).
 
-![](ESP-2-Payments-Log-View-A.png)
+![](./ESP-2-Payments-Log-View-A.png)
 
 > **NOTE:** It can be helpful to see more samples of a given form/view in order to better understand the data and metadata. Here are a few more Payment Logs to consider in your analysis.
 
-![](ESP-2-Payments-Log-View-B.png)
+![](./ESP-2-Payments-Log-View-B.png)
 
-![](ESP-2-Payments-Log-View-C.png)
+![](./ESP-2-Payments-Log-View-C.png)
  
 This form was analyzed according to the rules of 0NF (Zero-Normal Form), 1NF (First-Normal Form), 2NF (Second-Normal Form), and 3NF (Third-Normal Form).
 
@@ -63,7 +63,7 @@ These are the tables/entities after normalizing the Payment Log View.
 
 The following ERD for the *Payment Log View* is based on the final 3<sup>rd</sup> normal form.
 
-![](ESP-2-ERD-PaymentLogView.png)
+![](./ESP-2-ERD-PaymentLogView.png)
 
 
 ----

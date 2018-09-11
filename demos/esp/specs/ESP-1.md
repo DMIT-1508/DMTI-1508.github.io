@@ -11,7 +11,7 @@ This is a sample solution of normalizing the **Customer Details View** and the *
 
 The Customer Details View and its resulting tables are based on the following form (taken from the original documentation).
 
-![](ESP-1-Customer-Details-View.png)
+![](./ESP-1-Customer-Details-View.png)
 
 This form was analyzed according to the rules of 0NF (Zero-Normal Form), 1NF (First-Normal Form), 2NF (Second-Normal Form), and 3NF (Third-Normal Form).
 
@@ -29,7 +29,7 @@ No changes to the table in 1NF to 3NF.
 
 The following ERD represents the tables/entities from the **Customer Details View**.
 
-![](ESP-1-ERD-CustomerDetailsView.png)
+![](./ESP-1-ERD-CustomerDetailsView.png)
 
 ----
 
@@ -37,7 +37,7 @@ The following ERD represents the tables/entities from the **Customer Details Vie
 
 The Customer Orders View and its resulting tables are based on the following form (taken from the original documentation).
 
-![](CustomerOrdersView.png)
+![](./CustomerOrdersView.png)
  
 This form was analyzed according to the rules of 0NF (Zero-Normal Form), 1NF (First-Normal Form), 2NF (Second-Normal Form), and 3NF (Third-Normal Form).
 
@@ -87,7 +87,7 @@ These are the tables/entities after normalizing the Customer Details View.
 
 The following ERD for the *Customer Orders View* is based on the final 3<sup>rd</sup> normal form.
 
-![](ESP-1-ERD-CustomerOrdersView.png)
+![](./ESP-1-ERD-CustomerOrdersView.png)
 
 ----
 
