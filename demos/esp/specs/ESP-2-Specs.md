@@ -14,6 +14,8 @@ ESP allows its customers to make payments against their orders in several ways. 
 
 ESP keeps a payment log to keep track of all payments made against an order. Each order has its own log sheet. The log looks similar to the following:
 
+![](./ESP-2-Payments-Log-View-A.png)
+
 Note that a customer payment is applied against a single order.
 
 When a payment is made, ESP goes through the following process (worst case scenario – where a cheque arrives in the mail with no indication of an order number on it):
@@ -31,3 +33,7 @@ ESP has also indicated that they would like the new system to only allow specifi
 You are to take the information provided above and prepare a set of **3NF** relational entities and produce a relational **3NF ERD.**
 
 NOTE: It can be helpful to see more samples of a given form/view in order to better understand the data and metadata. Here are a few more Payment Logs to consider in your analysis.
+
+![](./ESP-2-Payments-Log-View-B.png)
+![](./ESP-2-Payments-Log-View-C.png)
+
