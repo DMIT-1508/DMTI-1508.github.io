@@ -11,7 +11,7 @@ The system uses a form that looks as follows:
 
 ![](./ESP-3-Inventory-Control-View.png)
 
-Item Numbers are unique and never reused. The Inventory Control Sheet records details of each item as well as all orders of that particular item from a supplier. ESP would like to be able to keep track of how many of each item they have in stock on an on-going basis so that they can use JIT (Just In Time) ordering rather than ordering when they run out. They would like the new system to keep an in-stock count for each item as well as a re-order value. If the in-stock count is less than or equal to the re-order level the item will be ordered from a supplier.
+Item Numbers are unique and never reused. The Inventory Control Sheet records details of each item as well as all orders of that particular item from a supplier. ESP would like to be able to keep track of how many of each item they have in stock on an on-going basis so that they can use JIT (Just In Time) ordering rather than ordering when they run out. They would like the new system to keep a re-order value for each item as well as an in-stock count. If the in-stock count is less than or equal to the re-order level the item will be ordered from a supplier.
 
 ## Purchase Orders
 
