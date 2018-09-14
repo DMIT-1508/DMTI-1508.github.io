@@ -9,13 +9,15 @@ ESP keeps track of its inventory using a paper based ledger system where purchas
 
 The system uses a form that looks as follows:
 
+![](./ESP-Inventory-Control-View.png)
+
 Item Numbers are unique and never reused. The Inventory Control Sheet records details of each item as well as all orders of that particular item from a supplier. ESP would like to be able to keep track of how many of each item they have in stock on an on-going basis so that they can use JIT (Just In Time) ordering rather than ordering when they run out. They would like the new system to keep an in-stock count for each item as well as a re-order value. If the in-stock count is less than or equal to the re-order level the item will be ordered from a supplier.
 
 ## Purchase Orders
 
 When items are ordered from suppliers a Purchase Order is created. A sample Purchase Order is shown below.
 
-![](media/949a6123807fb541c4fd8f0594c49b98.wmf)
+![](./ESP-3-Purchase-Orders-View.png)
 
 Purchase Order (PO) numbers are unique and never reused. The same supplier always has the same *supplier number* (which *is also unique*) and the supplier details are hand-written on the PO every time.
 

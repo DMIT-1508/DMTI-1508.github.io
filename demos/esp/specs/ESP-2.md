@@ -37,11 +37,11 @@ After performing First-Normal Form, a single table was generated: **PaymentLogDe
 
 After examining the *PaymentLogDetails*, there were no changes.
 
-> **Note:** When analyzing the *PaymentNumber* in the *PaymentLogDetails* entity, it became apparent (only through looking at additional Payments Log forms) that each Payment Log had their Payment Numbers re-starting at the value 1. As a result, this *PaymentNumber* is itself tightly tied to the *OrderNumber* and none of the other attributes in the entity are tied closely to just the *PaymentNumber* (though some seem to be more related to each other, which is dealt with in 3NF below).
+> **Note:** When analyzing the *PaymentNumber* in the *PaymentLogDetails* entity, it became apparent (only through looking at additional Payments Log forms) that each Payment Log had their Payment Numbers re-starting at the value 1. As a result, this *PaymentNumber* is itself tightly tied to the *OrderNumber* and none of the other attributes in the entity are tied closely to just the *PaymentNumber*.
 
 ### 3NF
 
-After performing Third-Normal Form, two tables were generated: **Customer**, and **Payment**.
+After performing Third-Normal Form, another table was generated: **Customer**.
 
 **Customer:** (<b class="pk">CustomerNumber</b>, FirstName, LastName)
 
