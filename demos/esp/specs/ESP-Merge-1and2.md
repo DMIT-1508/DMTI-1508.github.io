@@ -23,4 +23,4 @@ The remaining entities from the two ERDs have different names, but upon closer e
 
 The final entities - **OrderDetail**, **Item**, and **PaymentLogDetails** - all appear to be distinct, so they will be included in the merged ERD as-is.
 
-![](./Merge-ESP-1+2.png)
+![](./Merge-ESP-1and2.png)
