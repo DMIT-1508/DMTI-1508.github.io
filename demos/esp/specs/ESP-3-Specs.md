@@ -27,4 +27,4 @@ You are to take the information provided above and prepare a set of **3NF** rela
 
 Merge the schemas for the Inventory Control view and the Purchase Orders view.
 
-Merge the schema for the two views in ESP \# 3 with the schema for the previous views to produce a single set of tables that will support the needs of all the ESP views completed to date (**Customer Details**, **Customer Orders**, **Customer Payments**, **Inventory Control** and **Purchase Orders**).
+Merge the schema for the two views in ESP # 3 with the schema for the previous views to produce a single set of tables that will support the needs of all the ESP views completed to date (**Customer Details**, **Customer Orders**, **Customer Payments**, **Inventory Control** and **Purchase Orders**).
