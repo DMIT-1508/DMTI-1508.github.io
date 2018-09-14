@@ -2,6 +2,7 @@
   "name": "dmit-1508.github.io",
   "version": "1.5.0",
   "main": "index.html",
+  "description": "DMIT-1508 Student Notes",
   "repository": "https://github.com/DMIT-1508/DMIT-1508.github.io.git",
   "author": "Dan Gilleland <dgilleland@nait.ca>",
   "license": "UNLICENSED",
