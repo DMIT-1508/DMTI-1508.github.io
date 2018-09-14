@@ -80,6 +80,7 @@ module.exports = {
                 'ESP-1-Proof',
                 'ESP-2-Specs',
                 'ESP-2',
+                'ESP-Merge-1+2',
                 'ESP-3-Specs',
                 // 'ESP-3',
                 'ESP-4-Specs',
