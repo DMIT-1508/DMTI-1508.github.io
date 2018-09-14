@@ -34,6 +34,7 @@ module.exports = {
                 'erdToEnglish',
                 'normalization',
                 'lucidChart',
+                'labTemplate',
                 '/demos/esp/specs/'
             ],
 
@@ -75,6 +76,7 @@ module.exports = {
             ],
             '/demos/esp/specs/' :[
                 '',
+                'legend',
                 'ESP-1-Specs',
                 'ESP-1',
                 'ESP-1-Proof',
