@@ -24,6 +24,7 @@ module.exports = {
             { text: 'DML', link: '/DML/' },
             { text: 'SQL', link: '/SQL/' },
             { text: 'DCL', link: '/DCL/' },
+            { text: 'MS SQL 2017', link: '/about/slides-installing-sql-server'},
             { text: 'Issues/Bugs', link: 'https://github.com/DMIT-1508/DMIT-1508.github.io/issues/new' },
             { text: 'Moodle', link: 'https://moodle.nait.ca' },
         ],
