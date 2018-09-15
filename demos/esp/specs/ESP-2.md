@@ -80,7 +80,7 @@ The following ERD for the *Payment Log View* is based on the final 3<sup>rd</sup
     font-style: italic;
     text-decoration: wavy underline green;    
 }
-.gr {
+.rg {
     color: darkorange;
     font-size: 1.2em;
     font-weight: bold;

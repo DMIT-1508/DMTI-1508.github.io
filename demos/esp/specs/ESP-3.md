@@ -24,9 +24,14 @@ The third specifications document for Emergency Service & Product (ESP) presente
     font-style: italic;
     text-decoration: wavy underline green;    
 }
-.gr {
+.rg {
     color: darkorange;
     font-size: 1.2em;
     font-weight: bold;
+}
+.note {
+    font-weight: bold;
+    color: brown;
+    font-size: 1.1em;
 }
 </style>

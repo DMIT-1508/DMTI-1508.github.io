@@ -45,7 +45,7 @@ This form was analyzed according to the rules of 0NF (Zero-Normal Form), 1NF (Fi
 
 After performing Zero-Normal Form, a single table was generated: **Order**.
 
-**Order:**	(CustomerNumber, FirstName, LastName, Address, City, Province, PostalCode, Phone, Date, <b class="pk">OrderNumber</b>, <b class="gr">{</b>ItemNumber, Description, Quantity, CurrentPrice, SellingPrice, Amount<b class="gr">}</b>, Subtotal, GST, Total)
+**Order:**	(CustomerNumber, FirstName, LastName, Address, City, Province, PostalCode, Phone, Date, <b class="pk">OrderNumber</b>, <b class="rg">{</b>ItemNumber, Description, Quantity, CurrentPrice, SellingPrice, Amount<b class="rg">}</b>, Subtotal, GST, Total)
 
 ### 1NF
 
@@ -103,7 +103,7 @@ The following ERD for the *Customer Orders View* is based on the final 3<sup>rd<
     font-style: italic;
     text-decoration: wavy underline green;    
 }
-.gr {
+.rg {
     color: darkorange;
     font-size: 1.2em;
     font-weight: bold;
