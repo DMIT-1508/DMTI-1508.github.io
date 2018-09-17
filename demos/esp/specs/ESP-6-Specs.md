@@ -14,31 +14,56 @@ The following is a sample pickup sheet for one of the drivers.
 ### Analysis
 
 0NF – Identify Meta-data
-PickupSheet	(PickupSheetId†, DriverId‡, DriverFirstName, DriverLastName, Date {SupplierId, SupplierName, Address {PurchaseOrderNumber, {ItemNumber, Quantity, PickupQuantity}}})
+**PickupSheet** (PickupSheetId†, DriverId‡, DriverFirstName, DriverLastName, Date {SupplierId, SupplierName, Address {PurchaseOrderNumber, {ItemNumber, Quantity, PickupQuantity}}})
 
 Notes: 
 † - PickupSheetId is a technical key that was introduced in 0NF to uniquely identify each pickup sheet.
 ‡ - DriverId is a technical key that was introduced in 3rd Normal Form and “back-filled” to 0NF.
 
 1NF – Remove Repeating Groups
-PickupSheet	(PickupSheetId, DriverId, DriverFirstName, DriverLastName, Date)
+**PickupSheet** (PickupSheetId, DriverId, DriverFirstName, DriverLastName, Date)
 
-PickupLocation	(PickupSheetId, SupplierId, SupplierName, Address)
+**PickupLocation** (PickupSheetId, SupplierId, SupplierName, Address)
 
-PickupOrder	(PickupSheetId†, SupplierId, PurchaseOrderNumber,)
+**PickupOrder** (PickupSheetId†, SupplierId, PurchaseOrderNumber,)
 
-PickupItem	(PickupSheetId†, SupplierId, PurchaseOrderNumber, ItemNumber, Quantity, PickupQuantity)
+**PickupItem** (PickupSheetId†, SupplierId, PurchaseOrderNumber, ItemNumber, Quantity, PickupQuantity)
 
 
 2NF – Identify Partial Dependencies
-PickupLocation	(PickupSheetId, SupplierId)
+**PickupLocation** (PickupSheetId, SupplierId)
 
-Supplier	(SupplierId, SupplierName, Address)
+**Supplier** (SupplierId, SupplierName, Address)
 
 
 3NF – Identify Transitive Dependencies
-PickupSheet	(PickupSheetId, DriverId‡, Date)
+**PickupSheet** (PickupSheetId, DriverId‡, Date)
 
-Driver	(DriverId‡, DriverFirstName, DriverLastName)
+Driver (DriverId‡, DriverFirstName, DriverLastName)
 
 
+----
+
+<style type="text/css">
+.pk {
+    font-weight: bold;
+    display: inline-block;
+    border: solid thin blue;
+    padding: 0 1px;
+}
+.fk {
+    color: green;
+    font-style: italic;
+    text-decoration: wavy underline green;    
+}
+.rg {
+    color: darkorange;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.note {
+    font-weight: bold;
+    color: brown;
+    font-size: 1.1em;
+}
+</style>
