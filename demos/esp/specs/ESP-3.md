@@ -36,7 +36,7 @@ When performing Second-Normal Form, no clear partial dependencies were identifie
 When performing Third-Normal Form, no transitive dependencies were identified, and the tables have not changed.
 
 ### ERD
-![](ESP-3-ERD-Inventory-Control-View.png)
+![](./ESP-3-ERD-Inventory-Control-View.png)
 
 
 ----
@@ -82,7 +82,7 @@ After performing Third-Normal Form, a new table was generated: **Supplier**.
 
 ### ERD
 
-![](ESP-3-ERD-Purchase-Orders-View.png)
+![](./ESP-3-ERD-Purchase-Orders-View.png)
 
 
 
