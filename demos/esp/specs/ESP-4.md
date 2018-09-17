@@ -47,7 +47,7 @@ After performing Third-Normal Form, a single table was generated: **Supplier**.
 
 ### ERD
 
-![](ESP-4-ERD-Cheque-Register-View.png)
+![](./ESP-4-ERD-Cheque-Register-View.png)
 ----
 
 <style type="text/css">
