@@ -15,7 +15,7 @@ The following is a sample pickup sheet for one of the drivers.
 
 ### 0NF – Identify Meta-data
 
-**PickupSheet** (<b class="pk">PickupSheetId<sup>†</sup><b>, DriverId<sup>‡</sup>, DriverFirstName, DriverLastName, Date <b class="rg">{</b>SupplierId, SupplierName, Address <b class="rg">{</b>PurchaseOrderNumber, <b class="rg">{</b>ItemNumber, Quantity, PickupQuantity<b class="rg">} } }</b>)
+**PickupSheet** (<b class="pk">PickupSheetId<sup>†</sup></b>, DriverId<sup>‡</sup>, DriverFirstName, DriverLastName, Date <b class="rg">{</b>SupplierId, SupplierName, Address <b class="rg">{</b>PurchaseOrderNumber, <b class="rg">{</b>ItemNumber, Quantity, PickupQuantity<b class="rg">} } }</b>)
 
 > **Notes:**
 > **†** - PickupSheetId is a technical key that was introduced in 0NF to uniquely identify each pickup sheet.
