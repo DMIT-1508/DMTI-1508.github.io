@@ -9,7 +9,7 @@ The third specifications document for Emergency Service & Product (ESP) presente
 
 The Inventory Control Sheet and its resulting tables are based on the following form (taken from the original documentation).
 
-![](./ESP-3-Inventory_Control-View.png)
+![](./ESP-3-Inventory-Control-View.png)
 
 This form was analyzed according to the rules of 0NF (Zero-Normal Form), 1NF (First-Normal Form), 2NF (Second-Normal Form), and 3NF (Third-Normal Form).
 
