@@ -11,36 +11,43 @@ The following is a sample pickup sheet for one of the drivers.
 
 ![Driver Details View](./ESP-6-Driver-Details-View.png)
 
-### Analysis
+## Analysis
 
-0NF – Identify Meta-data
-**PickupSheet** (PickupSheetId†, DriverId‡, DriverFirstName, DriverLastName, Date {SupplierId, SupplierName, Address {PurchaseOrderNumber, {ItemNumber, Quantity, PickupQuantity}}})
+### 0NF – Identify Meta-data
 
-Notes: 
-† - PickupSheetId is a technical key that was introduced in 0NF to uniquely identify each pickup sheet.
-‡ - DriverId is a technical key that was introduced in 3rd Normal Form and “back-filled” to 0NF.
+**PickupSheet** (<b class="pk">PickupSheetId<sup>†</sup><b>, DriverId<sup>‡</sup>, DriverFirstName, DriverLastName, Date <b class="rg">{</b>SupplierId, SupplierName, Address <b class="rg">{</b>PurchaseOrderNumber, <b class="rg">{</b>ItemNumber, Quantity, PickupQuantity<b class="rg">} } }</b>)
 
-1NF – Remove Repeating Groups
-**PickupSheet** (PickupSheetId, DriverId, DriverFirstName, DriverLastName, Date)
+> **Notes:**
+> **†** - PickupSheetId is a technical key that was introduced in 0NF to uniquely identify each pickup sheet.
+> **‡** - DriverId is a technical key that was introduced in 3rd Normal Form and "back-filled" to 0NF.
 
-**PickupLocation** (PickupSheetId, SupplierId, SupplierName, Address)
+### 1NF – Separate Repeating Groups
 
-**PickupOrder** (PickupSheetId†, SupplierId, PurchaseOrderNumber,)
+**PickupSheet** (<b class="pk">PickupSheetId</b>, DriverId, DriverFirstName, DriverLastName, Date)
 
-**PickupItem** (PickupSheetId†, SupplierId, PurchaseOrderNumber, ItemNumber, Quantity, PickupQuantity)
+**PickupLocation** (<b class="pk"><u class="fk">PickupSheetId</u>, SupplierId</b>, SupplierName, Address)
 
+**PickupOrder** (<b class="pk"><u class="fk">PickupSheetId†, SupplierId</u>, PurchaseOrderNumber</b>)
 
-2NF – Identify Partial Dependencies
-**PickupLocation** (PickupSheetId, SupplierId)
-
-**Supplier** (SupplierId, SupplierName, Address)
+**PickupItem** (<b class="pk"><u class="fk">PickupSheetId†, SupplierId, PurchaseOrderNumber</u>, ItemNumber</b>, Quantity, PickupQuantity)
 
 
-3NF – Identify Transitive Dependencies
-**PickupSheet** (PickupSheetId, DriverId‡, Date)
+### 2NF – Identify Partial Dependencies
 
-Driver (DriverId‡, DriverFirstName, DriverLastName)
+**PickupLocation** (<b class="pk"><u class="fk">PickupSheetId</u>, <u class="fk">SupplierId</u></b>)
 
+**Supplier** (<b class="pk">SupplierId</pk>, SupplierName, Address)
+
+
+### 3NF – Identify Transitive Dependencies
+
+**PickupSheet** (<b class="pk">PickupSheetId</b>, <u class="fk">DriverId<sup>‡</sup></u>, Date)
+
+**Driver** (<b class="pk">DriverId</b><sup>‡</sup>, DriverFirstName, DriverLastName)
+
+### ERD
+
+![](./ESP-6-ERD-Driver-Details-View.png)
 
 ----
 
