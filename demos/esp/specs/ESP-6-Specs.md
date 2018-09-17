@@ -36,7 +36,7 @@ The following is a sample pickup sheet for one of the drivers.
 
 **PickupLocation** (<b class="pk"><u class="fk">PickupSheetId</u>, <u class="fk">SupplierId</u></b>)
 
-**Supplier** (<b class="pk">SupplierId</pk>, SupplierName, Address)
+**Supplier** (<b class="pk">SupplierId</b>, SupplierName, Address)
 
 
 ### 3NF – Identify Transitive Dependencies
