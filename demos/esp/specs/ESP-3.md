@@ -1,5 +1,5 @@
 ---
-title: V.3. - Inventory
+title: V.3. Inventory
 ---
 # ESP Document 3
 
@@ -23,13 +23,17 @@ After performing Zero-Normal Form, a single table was generated: **Inventory**.
 
 After performing First-Normal Form, a single table was generated: **OrderHistory**.
 
-**Inventory** (ItemNumber, ItemDescription, CurrentSalePrice, InStockCount, ReorderValue)
+**Inventory** (<b class="pk">ItemNumber</b>, ItemDescription, CurrentSalePrice, InStockCount, ReorderValue)
 
-**OrderHistory** (ItemNumber, PONumber, SupplierNumber, Date, Quantity, Cost)
+**OrderHistory** (<b class="pk"><u class="fk">ItemNumber</u>, PONumber</b>, SupplierNumber, Date, Quantity, Cost)
 
 ### 2NF
 
-When performing Second-Normal Form, no clear partial dependencies were identified; therefore, the tables have not changed.
+After performing First-Normal Form, a single table was generated: **PurchaseOrder**.
+
+**OrderHistory** (<b class="pk"><u class="fk">ItemNumber</u>, <u class="fk">PONumber</u></b>, Quantity, Cost)
+
+**OrderHistory** (<b class="pk">ItemNumber</b>, SupplierNumber, Date)
 
 ### 3NF
 
@@ -59,9 +63,9 @@ After performing Zero-Normal Form, a single table was generated: **PurchaseOrder
 
 After performing First-Normal Form, a single table was generated: **PurchaseOrderItem**.
 
-**PurchaseOrder** (PurchaseOrderNumber, SupplierName, SupplierNumber, Address, City, Province, PostalCode, Phone, Date, SubTotal, GST, Total)
+**PurchaseOrder** (<b class="pk">PurchaseOrderNumber</b>, SupplierName, SupplierNumber, Address, City, Province, PostalCode, Phone, Date, SubTotal, GST, Total)
 
-**PurchaseOrderItem** (PurchaseOrderNumber, ItemNumber, SupplierItemNumber, SupplierDescription, Quantity, Cost, Amount)
+**PurchaseOrderItem** (<b class="pk"><u class="fk">PurchaseOrderNumber</u>, ItemNumber</b>, SupplierItemNumber, SupplierDescription, Quantity, Cost, Amount)
 
 ### 2NF
 
@@ -74,11 +78,11 @@ After performing Second-Normal Form, no clear partial dependencies were identifi
 
 After performing Third-Normal Form, a new table was generated: **Supplier**.
 
-**PurchaseOrder** (PurchaseOrderNumber, SupplierNumber, Date, SubTotal, GST, Total)
+**PurchaseOrder** (<b class="pk">PurchaseOrderNumber</b>, <u class="fk">SupplierNumber</u>, Date, SubTotal, GST, Total)
 
-**Supplier** (SupplierNumber, SupplierName, Address, City, Province, PostalCode, Phone)
+**Supplier** (<b class="pk">SupplierNumber</b>, SupplierName, Address, City, Province, PostalCode, Phone)
 
-**PurchaseOrderItem**(PurchaseOrderNumber, ItemNumber, SupplierItemNumber, SupplierDescription, Quantity, Cost, Amount)
+**PurchaseOrderItem**(<b class="pk"><u class="fk">PurchaseOrderNumber</u>, ItemNumber</b>, SupplierItemNumber, SupplierDescription, Quantity, Cost, Amount)
 
 ### ERD
 
