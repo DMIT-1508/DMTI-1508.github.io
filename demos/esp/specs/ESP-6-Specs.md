@@ -43,7 +43,7 @@ The following is a sample pickup sheet for one of the drivers.
 
 **PickupSheet** (<b class="pk">PickupSheetId</b>, <u class="fk">DriverId<sup>‡</sup></u>, Date)
 
-**Driver** (<b class="pk">DriverId</b><sup>‡</sup>, DriverFirstName, DriverLastName)
+**Driver** (<b class="pk">DriverId<sup>‡</sup></b>, DriverFirstName, DriverLastName)
 
 ### ERD
 
