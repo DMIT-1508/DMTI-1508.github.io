@@ -36,7 +36,8 @@ module.exports = {
                 'normalization',
                 'lucidChart',
                 'labTemplate',
-                '/demos/esp/specs/'
+                '/demos/esp/specs/',
+                '/demos/joes-videos/'
             ],
 
             '/DDL/': [
