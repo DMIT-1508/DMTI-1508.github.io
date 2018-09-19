@@ -76,6 +76,10 @@ module.exports = {
                 '',
                 ''
             ],
+            '/demos/joes-videos/': [
+                '',
+                'view1'
+            ],
             '/demos/esp/specs/' :[
                 '',
                 'legend',
