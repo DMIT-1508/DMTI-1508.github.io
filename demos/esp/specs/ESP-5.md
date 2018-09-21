@@ -1,25 +1,27 @@
 ---
 title: V.5. Shippers and Order Shipments
 ---
-# Shippers
+# ESP Document 5
 
-## 0NF
+## Shippers Details View
 
-## 1NF – 3NF
+### 0NF
+
+### 1NF – 3NF
 
 No changes to the table in 1NF to 3NF.
 
-## ERD
+### ERD
 
 The following ERD represents the tables/entities from the Shipper Details View.
 
-# Order Shipment View
+## Order Shipment View
 
-## 0NF
+### 0NF
 
 **Order:** (<b class="pk">OrderNumber</b>, CustomerFirstName, CustomerLastName, CustomerNumber, Address, City, Province, PostalCode, Phone, OrderDate, <b class="rg">{ <b class="rg">{</b></b>ItemId, ItemDescription, OrderQuantity, ShipQuantity<b class="rg">}</b>, ShipperId, WaybillNumber, ShipDate<b class="rg">}</b>)
 
-## 1NF
+### 1NF
 
 **Order:** (<b class="pk">OrderNumber</b>, CustomerFirstName, CustomerLastName, CustomerNumber, Address, City, Province, PostalCode, Phone, OrderDate)
 
@@ -27,13 +29,13 @@ The following ERD represents the tables/entities from the Shipper Details View.
 
 **OrderShipmentDetail:** (<b class="pk"><u class="fk">OrderNumber, ShipDate</u>, ItemId</b>, ItemDescription, OrderQuantity, ShipQuantity)
 
-## 2NF
+### 2NF
 
 **OrderShipmentDetail:** (<b class="pk"><u class="fk">OrderNumber, ShipDate</u>, <u class="fk">ItemId</u></b>, OrderQuantity, ShipQuantity)
 
 **Item:** (<b class="pk">ItemId</b>, ItemDescription)
 
-## 3NF
+### 3NF
 
 **Order:** (<b class="pk">OrderNumber</b>, <u class="fk">CustomerNumber</u>, OrderDate)
 
@@ -43,7 +45,7 @@ The following ERD represents the tables/entities from the Shipper Details View.
 
 **Shipper:** (<b class="pk">ShipperId</b>, WaybillNumber)
 
-## ERD
+### ERD
 
 ![](./ESP-ERD-5-OrderShipment.png)
 
