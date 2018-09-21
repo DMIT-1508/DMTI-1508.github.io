@@ -47,7 +47,7 @@ The following ERD represents the tables/entities from the Shipper Details View.
 
 ### ERD
 
-![](./ESP-ERD-5-OrderShipment.png)
+![](./ESP-5-ERD-OrderShipment.png)
 
 ----
 
