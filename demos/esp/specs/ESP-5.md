@@ -7,6 +7,8 @@ title: V.5. Shippers and Order Shipments
 
 ### 0NF
 
+**Shipper:** (<b class="pk">ShipperNumber</b>, CompanyName, Address, City, Province, PostalCode, Phone)
+
 ### 1NF – 3NF
 
 No changes to the table in 1NF to 3NF.
@@ -14,6 +16,8 @@ No changes to the table in 1NF to 3NF.
 ### ERD
 
 The following ERD represents the tables/entities from the Shipper Details View.
+
+![](./ESP-5-ERD-ShipperDetails.png)
 
 ## Order Shipment View
 
@@ -24,6 +28,12 @@ The following ERD represents the tables/entities from the Shipper Details View.
 ### 1NF
 
 **Order:** (<b class="pk">OrderNumber</b>, CustomerFirstName, CustomerLastName, CustomerNumber, Address, City, Province, PostalCode, Phone, OrderDate)
+
+:::Note
+When looking at the outermost repeating group, it might be tempting to take the `ShipperId` as part of the new composite key, but a closer look at the form's data reveals that a combination of `ShipperId` and `OrderNumber` would not produce a unique key.
+
+We are told, however, that "At most, *each customer will get a single shipment in a day.*" That means, for each outer group of repeating items, the `ShipDate` is the best candidate for pairing with the `OrderNumber` to produce a primary key.
+:::
 
 **OrderShipment:** (<b class="pk"><u class="fk">OrderNumber</u>, ShipDate</b>, ShipperId, WaybillNumber)
 
@@ -41,9 +51,11 @@ The following ERD represents the tables/entities from the Shipper Details View.
 
 **Customer:** (<b class="pk">CustomerNumber</b>, CustomerFirstName, CustomerLastName, Address, City, Province, PostalCode, Phone)
 
-**OrderShipment:** (<b class="pk"><u class="fk">OrderNumber</u>, ShipDate</b>, <u class="fk">ShipperId</u>)
+:::Note
+For the **OrderShipment**, it would be tempting to associate the `WaybillNumber` with the `ShipperId` as a transitive dependency. However, the specifications said that we are not interested in managing waybill numbers for each shipper, so we will keep these attributes where they are.
 
-**Shipper:** (<b class="pk">ShipperId</b>, WaybillNumber)
+**OrderShipment:** (<b class="pk"><u class="fk">OrderNumber</u>, ShipDate</b>, ShipperId, WaybillNumber)
+:::
 
 ### ERD
 
