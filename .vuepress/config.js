@@ -95,7 +95,7 @@ module.exports = {
                 'ESP-4-Specs',
                 'ESP-4',
                 'ESP-5-Specs',
-                // 'ESP-5',
+                'ESP-5',
                 'ESP-6-Specs',
                 // 'ESP-6'
             ],
