@@ -43,6 +43,10 @@ The following ERD represents the tables/entities from the Shipper Details View.
 
 **Shipper:** (<b class="pk">ShipperId</b>, WaybillNumber)
 
+## ERD
+
+![](./ESP-ERD-5-OrderShipment.png)
+
 ----
 
 <style type="text/css">
