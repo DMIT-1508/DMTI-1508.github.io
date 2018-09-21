@@ -1,5 +1,5 @@
 ---
-title: V.3. - Merged ERDs
+title: V.3. Merged ERDs
 ---
 # Merging ERDs
 

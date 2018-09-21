@@ -3,7 +3,7 @@ title: V.2. Merged ERDs
 ---
 # Merging ERDs
 
-In the first document for ESP, two views were analyzed and ERDs generated for each of them.
+In the [specs for the first part](ESP-1-Specs.md) for ESP database design, two views were analyzed and ERDs generated for each of them.
 
 Customer Details View | Customer Orders View
 ----------------------|---------------------
@@ -11,9 +11,9 @@ Customer Details View | Customer Orders View
 
 The **Customer** entity that appears in both ERDs is essentially the same, having only minor differences in the naming of some attributes. As such, merging the two ERDs produces the same result as the ERD from the *Customer Orders View*.
 
-The ERD from the second document has some overlap and a more thoughtful merging is required to produce a single comprehensive ERD.
+The ERD from the [second part](ESP-2-Specs.md) has some overlap and a more thoughtful merging is required to produce a single comprehensive ERD.
 
-ESP Document 1 | Payment Log View
+ESP Part 1 ERD | Payment Log View
 ----------------------|---------------------
 ![](./ESP-1-ERD-CustomerOrdersView.png) | ![](./ESP-2-ERD-PaymentLogView.png)
 

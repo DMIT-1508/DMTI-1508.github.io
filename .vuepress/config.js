@@ -91,6 +91,7 @@ module.exports = {
                 'ESP-Merge-1and2',
                 'ESP-3-Specs',
                 'ESP-3',
+                'ESP-Merge-With-ESP-3',
                 'ESP-4-Specs',
                 'ESP-4',
                 'ESP-5-Specs',
