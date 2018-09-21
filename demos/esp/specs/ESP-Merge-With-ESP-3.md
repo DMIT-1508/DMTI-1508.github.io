@@ -9,6 +9,6 @@ The third ESP document resulted in two new ERDs, one for the *Inventory Control 
 | ----------------------|--------------------- |
 | ![](./ESP-3A-InventoryControlSheet.png) | ![](./ESP-3B-PurchaseOrders.png) |
 
-These new ERDs need to be added to the merged ERD from ESP document specs 1 and 2.
+These new ERDs need to be added to the [merged ERD](ESP-Merge-1and2.md) from ESP document specs 1 and 2.
 
 ![](./ESP-Merge-With-ESP-3.png)
