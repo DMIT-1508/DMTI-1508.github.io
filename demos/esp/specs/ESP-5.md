@@ -29,7 +29,7 @@ The following ERD represents the tables/entities from the Shipper Details View.
 
 **Order:** (<b class="pk">OrderNumber</b>, CustomerFirstName, CustomerLastName, CustomerNumber, Address, City, Province, PostalCode, Phone, OrderDate)
 
-::: Note
+::: tip Note
 When looking at the outermost repeating group, it might be tempting to take the `ShipperId` as part of the new composite key, but a closer look at the form's data reveals that a combination of `ShipperId` and `OrderNumber` would not produce a unique key.
 
 We are told, however, that "At most, *each customer will get a single shipment in a day.*" That means, for each outer group of repeating items, the `ShipDate` is the best candidate for pairing with the `OrderNumber` to produce a primary key.
@@ -51,7 +51,7 @@ We are told, however, that "At most, *each customer will get a single shipment i
 
 **Customer:** (<b class="pk">CustomerNumber</b>, CustomerFirstName, CustomerLastName, Address, City, Province, PostalCode, Phone)
 
-::: Note
+::: tip Note
 For the **OrderShipment**, it would be tempting to associate the `WaybillNumber` with the `ShipperId` as a transitive dependency. However, the specifications said that we are not interested in managing waybill numbers for each shipper, so we will keep these attributes where they are.
 
 **OrderShipment:** (<b class="pk"><u class="fk">OrderNumber</u>, ShipDate</b>, ShipperId, WaybillNumber)
