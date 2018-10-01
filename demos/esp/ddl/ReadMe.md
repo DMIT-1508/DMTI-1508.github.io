@@ -31,6 +31,7 @@ The sample scenario for Emergency Service Providers (ESP) is an excellent exampl
 - **Payments** - Primary key must be an Identity, starting at 1 and increasing by one.
   - `Payments.PaymentAmount` - Must be greater than zero.
   - `Payments.PaymentType` - Must be either 'Cash', 'Cheque' or 'Credit'.
+- **PaymentLogDetails**
   - `PaymentLogDetails.BalanceOwing` - Cannot be negative.
 
 ## Stage 3 - Suppliers and Purchase Orders
