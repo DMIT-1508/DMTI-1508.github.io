@@ -49,7 +49,8 @@ module.exports = {
                 'checkConstraint',
                 'uniqueConstraint',
                 'alterTable',
-                'createView'
+                'createView',
+                '/demos/esp/ddl/'
             ],
 
             '/DML/': [

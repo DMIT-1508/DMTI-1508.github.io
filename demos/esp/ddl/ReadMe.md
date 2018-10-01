@@ -9,7 +9,7 @@ The sample scenario for Emergency Service Providers (ESP) is an excellent exampl
 
 Physical ERD - Spec 1
 
-![](./ESP - Merged Entity Relationship Diagram - Physical ERD - Spec 1.png)
+![](./ESP-Merged-ERD-Physical-Part-1.png)
 
 -   Customers - Primary key must be an Identity, starting at 100 and increasing by one.
 -   Orders - Primary key must be an Identity, starting at 200 and increasing by one.
@@ -29,7 +29,7 @@ Physical ERD - Spec 1
 
 Physical ERD - Spec 2
 
-![](./ESP - Merged Entity Relationship Diagram - Physical ERD - Spec 2.png)
+![](./ESP-Merged-ERD-Physical-Part-2.png)
 
 -   Payments - Primary key must be an Identity, starting at 1 and increasing by one.
 
@@ -41,7 +41,7 @@ Physical ERD - Spec 2
 
 Physical ERD - Spec 3
 
-![](./ESP - Merged Entity Relationship Diagram - Physical ERD - Spec 3.png)
+![](./ESP-Merged-ERD-Physical-Part-3.png)
 
 -   Suppliers - Primary key must be an Identity, starting at 100 and increasing by one.
 -   PurchaseOrders - Primary key must be an Identity, starting at 1 and increasing by one.
@@ -60,7 +60,7 @@ Physical ERD - Spec 3
 
 Physical ERD - Spec 4
 
-![](./ESP - Merged Entity Relationship Diagram - Physical ERD - Spec 4.png)
+![](./ESP-Merged-ERD-Physical-Part-4.png)
 
 -   ChequeRegisters.ChequeAmount - Must be greater than zero.
 
@@ -68,4 +68,4 @@ Physical ERD - Spec 4
 
 Complete Physical ERD - Spec 1 through 4
 
-![](./ESP - Merged Entity Relationship Diagram - Physical ERD.png)
+![](./ESP-Merged-ERD-Physical.png)
