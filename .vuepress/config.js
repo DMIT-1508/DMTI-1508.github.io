@@ -100,6 +100,17 @@ module.exports = {
                 'ESP-6-Specs',
                 // 'ESP-6'
             ],
+            '/demos/esp/ddl/': [
+                '',
+                'UseDb',
+                'CreateCustomersOrders',
+                'CreateItemsOrderDetails',
+                'PkFk',
+                'OtherConstraints',
+                'TestData',
+                'AlterTable',
+                'Indexes'
+            ],
 
             // fallback
             '/about/': [
