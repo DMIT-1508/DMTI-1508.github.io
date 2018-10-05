@@ -1,7 +1,7 @@
 ---
 title: Basic Tables
 ---
-# Basic Tables - Customers and Orders
+# ESP 1 - Basic Tables
 
 ```sql
 -- To create a database table, we use the CREATE TABLE statement.
@@ -30,6 +30,7 @@ CREATE TABLE Customers
     PostalCode      char(6)             NOT NULL,
     PhoneNumber     char(13)                NULL  -- NULL means the data is optional
 )
+
 CREATE TABLE Orders
 (
     OrderNumber     int                 NOT NULL,
@@ -38,5 +39,23 @@ CREATE TABLE Orders
     Subtotal        money               NOT NULL,
     GST             money               NOT NULL,
     Total           money               NOT NULL
+)
+
+CREATE TABLE InventoryItems
+(
+    ItemNumber          varchar(5)          NOT NULL,
+    ItemDescription     varchar(50)             NULL,
+    CurrentSalePrice    money               NOT NULL,
+    InStockCount        int                 NOT NULL,
+    ReorderLevel        int                 NOT NULL
+)
+
+CREATE TABLE OrderDetails
+(
+    OrderNumber     int                 NOT NULL,
+    ItemNumber      varchar(5)          NOT NULL,
+    Quantity        int                 NOT NULL,
+    SellingPrice    money               NOT NULL,
+    Amount          money               NOT NULL
 )
 ```

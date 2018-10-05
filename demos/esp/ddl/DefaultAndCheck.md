@@ -1,7 +1,7 @@
 ---
 title: Default and Check Constraints
 ---
-# ESP - Default and Check Constraints
+# Default and Check Constraints
 
 ## Customers
 

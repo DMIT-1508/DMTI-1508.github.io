@@ -103,13 +103,14 @@ module.exports = {
             '/demos/esp/ddl/': [
                 '',
                 'UseDb',
-                'CreateCustomersOrders',
-                'CreateItemsOrderDetails',
+                'BasicTables',
                 'PkFk',
-                'OtherConstraints',
+                'DefaultAndCheck',
+                'Computed',
                 'TestData',
                 'AlterTable',
-                'Indexes'
+                'Indexes',
+                'Complete'
             ],
 
             // fallback

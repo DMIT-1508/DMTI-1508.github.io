@@ -1,5 +1,5 @@
 ---
-title: ESP 1 Change Requests
+title: Alter Table
 ---
 # ESP 1 - Handling Change Requests with Alter Table
 
