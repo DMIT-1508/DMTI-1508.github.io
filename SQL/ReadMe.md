@@ -80,4 +80,4 @@ If it looks complex don't worry. All the “clauses” listed don't need to be u
 
 All the examples can be executed in the IQSchool database so you can see the results.
 
-![](./topics/SQL/IQSchool - ERD.png)
+![](./IQSchool-ERD.png)
