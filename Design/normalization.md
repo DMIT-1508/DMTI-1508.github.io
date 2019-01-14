@@ -42,6 +42,12 @@ To document the 1NF changes, do the following:
 
 Second Normal Form (**2NF**) is all about *separating out **partial dependencies***.
 
+1. Examine an entity with a composity key, and identify which non-primary key attributes have a dependency on only *part* of the composite primary key. These are the attributes that will form our new entity.
+2. Re-write the original entity without those partially dependent attributes.
+3. *Copy* down the partial primary key attribute to the new entity; make it the new entity's primary key.
+4. Add the partially dependent attributes to the new entity.
+5. Mark the partial primary key attribute in the original entity as a foreign key to our new entity.
+
 ## Third Normal Form
 
 Third Normal Form (**3NF**) is all about *separating out **transitive dependencies***.
