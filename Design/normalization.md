@@ -52,6 +52,10 @@ Second Normal Form (**2NF**) is all about *separating out **partial dependencies
 
 Third Normal Form (**3NF**) is all about *separating out **transitive dependencies***.
 
+1. Examine all previous entities and look for any "hidden" or "embedded" entities inside the non-primary key attributes. At the same time, see if you can find which attribute uniquely identifies the set of embedded attributes inside that entity.
+2. Separate out this set of attributes representing the embedded entity by making it a distinct entity in its own right. Give this entity a name; be sure to identify this new entity's primary key.
+3. Re-write the original entity, and be sure to retain the attribute that identifies the newly generated entity; this will be your foreign key to that new entity.
+
 ## A Simple Example
 
 
