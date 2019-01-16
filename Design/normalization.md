@@ -56,6 +56,16 @@ Third Normal Form (**3NF**) is all about *separating out **transitive dependenci
 2. Separate out this set of attributes representing the embedded entity by making it a distinct entity in its own right. Give this entity a name; be sure to identify this new entity's primary key.
 3. Re-write the original entity, and be sure to retain the attribute that identifies the newly generated entity; this will be your foreign key to that new entity.
 
+## Keeping it all Straight
+
+A key part of walking through the normalization steps is to **be consistent**.
+
+- When you give an entity a name, *keep that same name* each time you modify the list of attributes in that entity.
+- When you name your attributes in **0NF**, *key the same names* for these attributes. If you are placing those attributes in a new entity, *do **not*** rename the attributes.
+- ***Never*** change the primary key from a previously established entity. (*Note: There are some exceptions to this rule, but as a beginner, changing a primary key is a strong indicator that you're doing it wrong.*)
+- *Never* change the foreign keys from previously established entities when re-writing them as modified entities.
+- Always self-check the relationship between your entities at each step of the normalization process. Make a quick note of the one-to-many relationships that should form as you create new entities at each step; the cardinal relationship between the entities should make sense.
+
 ## A Simple Example
 
 
