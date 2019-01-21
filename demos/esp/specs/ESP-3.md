@@ -33,7 +33,7 @@ After performing First-Normal Form, a single table was generated: **PurchaseOrde
 
 **OrderHistory** (<b class="pk"><u class="fk">ItemNumber</u>, <u class="fk">PONumber</u></b>, Quantity, Cost)
 
-**OrderHistory** (<b class="pk">ItemNumber</b>, SupplierNumber, Date)
+**OrderHistory** (<b class="pk">PONumber</b>, SupplierNumber, Date)
 
 ### 3NF
 
