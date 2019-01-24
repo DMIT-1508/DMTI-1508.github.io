@@ -23,43 +23,58 @@ The following ERD represents the tables/entities from the Shipper Details View.
 
 ### 0NF
 
-**Order:** (<b class="pk">OrderNumber</b>, CustomerFirstName, CustomerLastName, CustomerNumber, Address, City, Province, PostalCode, Phone, OrderDate, <b class="rg">{ <b class="rg">{</b></b>ItemId, ItemDescription, OrderQuantity, ShipQuantity<b class="rg">}</b>, ShipperId, WaybillNumber, ShipDate<b class="rg">}</b>)
+After performing Zero-Normal Form, a single table was generated: **Order**
+
+**Order**: (<b class="pk">OrderNumber</b>, CustomerFirstName, CustomerLastName, CustomerNumber, Address, City, Province, PostalCode, Phone, OrderDate, <b class="rg">{</b> <b class="rg">{</b> ItemId, ItemDescription, OrderQuantity, ShipQuantity<b class="rg">}</b> , ShipperId, WaybillNumber, ShipDate<b class="rg">}</b>)
 
 ### 1NF
 
-**Order:** (<b class="pk">OrderNumber</b>, CustomerFirstName, CustomerLastName, CustomerNumber, Address, City, Province, PostalCode, Phone, OrderDate)
+After performing First-Normal Form, two additional tables were generated: **OrderShipment** and **OrderShipmentDetail**
 
-::: tip Note
-When looking at the outermost repeating group, it might be tempting to take the `ShipperId` as part of the new composite key, but a closer look at the form's data reveals that a combination of `ShipperId` and `OrderNumber` would not produce a unique key.
+**Order**: (<b class="pk">OrderNumber</b>, CustomerFirstName, CustomerLastName, CustomerNumber, Address, City, Province, PostalCode, Phone, OrderDate)
 
-We are told, however, that "At most, *each customer will get a single shipment in a day.*" That means, for each outer group of repeating items, the `ShipDate` is the best candidate for pairing with the `OrderNumber` to produce a primary key.
-:::
+**OrderShipment**: (<b class="pk"><u class="fk">OrderNumber</u>, WaybillNumber</b>, ShipperId, ShipDate)
 
-**OrderShipment:** (<b class="pk"><u class="fk">OrderNumber</u>, ShipDate</b>, ShipperId, WaybillNumber)
-
-**OrderShipmentDetail:** (<b class="pk"><u class="fk">OrderNumber, ShipDate</u>, ItemId</b>, ItemDescription, OrderQuantity, ShipQuantity)
+**OrderShipmentDetail**: (<b class="pk"><u class="fk">OrderNumber, WaybillNumber</u>, ItemId</b>, ItemDescription, OrderQuantity, ShipQuantity)
 
 ### 2NF
 
-**OrderShipmentDetail:** (<b class="pk"><u class="fk">OrderNumber, ShipDate</u>, <u class="fk">ItemId</u></b>, OrderQuantity, ShipQuantity)
+After performing Second-Normal Form, two additional tables were generated: **Waybill** and **Item**.
 
-**Item:** (<b class="pk">ItemId</b>, ItemDescription)
+**OrderShipment**: (<b class="pk"><u class="fk">OrderNumber</u>, <u class="fk">WaybillNumber</u></b>)
+
+**Waybill**: (<b class="pk">WaybillNumber</b>, ShipperId, ShipDate)
+
+**OrderShipmentDetail**: (<b class="pk"><u class="fk">OrderNumber, WaybillNumber</u>, <u class="fk">ItemId</u></b>, OrderQuantity, ShipQuantity)
+
+**Item**: (<b class="pk">ItemId</b>, ItemDescription)
+
 
 ### 3NF
 
-**Order:** (<b class="pk">OrderNumber</b>, <u class="fk">CustomerNumber</u>, OrderDate)
+After performing Third-Normal Form, an additional table was generated: **Customer**
 
-**Customer:** (<b class="pk">CustomerNumber</b>, CustomerFirstName, CustomerLastName, Address, City, Province, PostalCode, Phone)
+**Order**: (<b class="pk">OrderNumber</b>, <u class="fk">CustomerNumber</u>, OrderDate)
 
-::: tip Note
-For the **OrderShipment**, it would be tempting to associate the `WaybillNumber` with the `ShipperId` as a transitive dependency. However, the specifications said that we are not interested in managing waybill numbers for each shipper, so we will keep these attributes where they are.
+**Customer**: (<b class="pk">CustomerNumber</b>, CustomerFirstName, CustomerLastName, Address, City, Province, PostalCode, Phone)
 
-**OrderShipment:** (<b class="pk"><u class="fk">OrderNumber</u>, ShipDate</b>, ShipperId, WaybillNumber)
-:::
+### Final Tables
+
+**Order**: (<b class="pk">OrderNumber</b>, <u class="fk">CustomerNumber</u>, OrderDate)
+
+**Customer**: (<b class="pk">CustomerNumber</b>, CustomerFirstName, CustomerLastName, Address, City, Province, PostalCode, Phone)
+
+**OrderShipment**: (<b class="pk"><u class="fk">OrderNumber</u>, <u class="fk">WaybillNumber</u></b>)
+
+**Waybill**: (<b class="pk">WaybillNumber</b>, ShipperId, ShipDate)
+
+**OrderShipmentDetail**: (<b class="pk"><u class="fk">OrderNumber, WaybillNumber</u>, <u class="fk">ItemId</u></b>, OrderQuantity, ShipQuantity)
+
+**Item**: (<b class="pk">ItemId</b>, ItemDescription)
 
 ### ERD
 
-![](./ESP-5-ERD-OrderShipment.png)
+<!-- ![](./ESP-5-ERD-OrderShipment.png)-->
 
 ----
 
