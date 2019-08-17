@@ -118,8 +118,8 @@ module.exports = {
             '/about/': [
                 '',
                 'LOGs',
-                { text: 'Change Log', link: 'https://github.com/DMIT-1508/DMIT-1508.github.io/commits/dev' },
-                { text: 'Source on GitHub', link: 'https://github.com/DMIT-1508/DMIT-1508.github.io/' }
+                [ 'https://github.com/DMIT-1508/DMIT-1508.github.io/commits/dev',  'Change Log' ],
+                [ 'https://github.com/DMIT-1508/DMIT-1508.github.io/', 'Source on GitHub' ]
                 // 'colophon',
                 // 'todo',
                 // 'markdown-syntax'
