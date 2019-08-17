@@ -117,7 +117,8 @@ module.exports = {
             // fallback
             '/about/': [
                 '',
-                'LOGs'
+                'LOGs',
+                { text: 'Change Log', link: 'https://github.com/DMIT-1508/DMIT-1508.github.io/commits/dev' }
                 // 'colophon',
                 // 'todo',
                 // 'markdown-syntax'
