@@ -1,7 +1,7 @@
 module.exports = {
     title: 'DMIT-1508 Student Notes',
     description: 'Database Fundamentals',
-    markdown: {
+    extendMarkdown(md) {
         config: md => {
             md.set({ breaks: true })
             md.use(require('markdown-it-imsize'))
@@ -17,6 +17,7 @@ module.exports = {
               }
     },
     themeConfig: {
+        lastUpdated: 'Last Updated', // string | boolean
         nav: [
             { text: 'Home', link: '/about/' },
             { text: 'Normalization', link: '/Design/' },
@@ -122,5 +123,14 @@ module.exports = {
                 // 'markdown-syntax'
             ]
         }
+    },
+    plugins: {
+      '@vuewpress/pwa': {
+        serviceWorker: true,
+        updatePopup: true
+      },
+      '@vuepress/active-header-links': { },
+      '@vuepress/back-to-top': { },
+      '@vuepress/last-updated': { }
     }
 }
