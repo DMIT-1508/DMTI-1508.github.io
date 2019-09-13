@@ -131,11 +131,10 @@ p { white-space: nowrap; }
     font-size:.5em;
     font-weight: bold;
     color: white;
-    background-color: #08a0ff;
+    background-color: #72c4f7;
     position: absolute;
     left: -5px;
-    top: -12px;
-    background-color: white;
+    top: -15px;
     border-radius: 50%;
     border: solid thin blue;
     width: 1.4em;
@@ -167,6 +166,9 @@ p { white-space: nowrap; }
 }
 .rg {
     display: inline-block;
+    color: inherit;
+    font-size: 1em;
+    font-weight: normal;
 }
 .rg::before {
     content: '\007B';
