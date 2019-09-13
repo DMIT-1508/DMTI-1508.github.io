@@ -74,13 +74,25 @@ Imagine a form that looks like this:
 
 ### 0NF - Identifying Metadata
 
-**Entity:** <span class="md"><b class="pk">OrderNumber</b>, Date, CustomerNumber, FirstName, LastName, Address, City, Province, PostalCode, Phone, <b class="rg">ItemNumber, Description, Quantity, Price, Amount</b>, Subtotal, GST, Total</span>
+**Order:** <span class="md"><b class="pk">OrderNumber</b>, Date, CustomerNumber, FirstName, LastName, Address, City, Province, PostalCode, Phone, <b class="rg">ItemNumber, Description, Quantity, Price, Amount</b>, Subtotal, GST, Total</span>
 
 ### 1NF - Repeating Groups
 
+**Order:** <span class="md"><b class="pk">OrderNumber</b>, Date, CustomerNumber, FirstName, LastName, Address, City, Province, PostalCode, Phone, Subtotal, GST, Total</span>
+
+**OrderDetails:** <span class="md"><b class="pk"><i class="fk">OrderNumber</i>, ItemNumber</b>, Description, Quantity, Price, Amount</span>
+
 ### 2NF - Partial Dependencies
 
+**OrderDetails:** <span class="md"><b class="pk"><i class="fk">OrderNumber</i>, <i class="fk">ItemNumber</i></b>, Quantity, Price, Amount</span>
+
+**Item:** <span class="md"><b class="pk"><i class="fk">OrderNumber</i>, ItemNumber</b>, Description</span>
+
 ### 3NF - Transitive Dependencies
+
+**Order:** <span class="md"><b class="pk">OrderNumber</b>, Date, <i class="fk">CustomerNumber</i>, Subtotal, GST, Total</span>
+
+**Customer:** <span class="md"><b class="pk">CustomerNumber</b>, FirstName, LastName, Address, City, Province, PostalCode, Phone</span>
 
 ### ERD
 
@@ -115,8 +127,11 @@ p { white-space: nowrap; }
     position: relative;
 }
 .pk::before {
-    content: 'PK';
+    content: 'P';
     font-size:.5em;
+    font-weight: bold;
+    color: white;
+    background-color: #08a0ff;
     position: absolute;
     left: -5px;
     top: -12px;
@@ -131,7 +146,9 @@ p { white-space: nowrap; }
 .fk {
     color: green;
     font-style: italic;
-    text-decoration: wavy underline green;    
+    text-decoration: wavy underline green;
+    padding: 0 2px;
+    position: relative;
 }
 .fk::before {
     content: 'F';
@@ -139,7 +156,8 @@ p { white-space: nowrap; }
     position: absolute;
     left: -1px;
     bottom: -17px;
-    background-color: white;
+    color:darkgreen;
+    background-color: #a7dea7;
     border-radius: 50%;
     border: dashed thin green;
     width: 1.4em;
