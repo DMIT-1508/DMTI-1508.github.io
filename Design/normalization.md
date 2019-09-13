@@ -91,17 +91,20 @@ Imagine a form that looks like this:
 ----
 
 <style type="text/css">
+p { white-space: nowrap; }
 .md {
     display: inline-block;
+    vertical-align: top;
+    white-space:normal;
 }
 .md::before {
     content: '(';
-    font-size: 1.2em;
+    font-size: 1.25em;
     font-weight: bold;
 }
 .md::after {
     content: ')';
-    font-size: 1.2em;
+    font-size: 1.25em;
     font-weight: bold;
 }
 .pk {
