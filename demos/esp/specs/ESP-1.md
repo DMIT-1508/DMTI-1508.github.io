@@ -45,7 +45,7 @@ This form was analyzed according to the rules of 0NF (Zero-Normal Form), 1NF (Fi
 
 After performing Zero-Normal Form, a single table was generated: **Order**.
 
-**Order:**	(CustomerNumber, FirstName, LastName, Address, City, Province, PostalCode, Phone, Date, <b class="pk">OrderNumber</b>, <b class="rg">{</b>ItemNumber, Description, Quantity, CurrentPrice, SellingPrice, Amount<b class="rg">}</b>, Subtotal, GST, Total)
+**Order:**	(CustomerNumber, FirstName, LastName, Address, City, Province, PostalCode, Phone, Date, <b class="pk">OrderNumber</b>, <b class="rg">ItemNumber, Description, Quantity, CurrentPrice, SellingPrice, Amount</b>, Subtotal, GST, Total)
 
 ### 1NF
 

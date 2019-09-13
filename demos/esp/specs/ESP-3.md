@@ -17,7 +17,7 @@ This form was analyzed according to the rules of 0NF (Zero-Normal Form), 1NF (Fi
 
 After performing Zero-Normal Form, a single table was generated: **Inventory**.
 
-**Inventory** (<b class="pk">ItemNumber</b>, ItemDescription, CurrentSalePrice, <b class="rg">{</b>Date, SupplierNumber, PONumber, Quantity, Cost<b class="rg">}</b>,  InStockCount, ReorderValue)
+**Inventory** (<b class="pk">ItemNumber</b>, ItemDescription, CurrentSalePrice, <b class="rg">Date, SupplierNumber, PONumber, Quantity, Cost</b>,  InStockCount, ReorderValue)
 
 ### 1NF
 
@@ -57,7 +57,7 @@ This form was analyzed according to the rules of 0NF (Zero-Normal Form), 1NF (Fi
 
 After performing Zero-Normal Form, a single table was generated: **PurchaseOrder**.
 
-**PurchaseOrder** (<b class="pk">PurchaseOrderNumber</b>, SupplierName, SupplierNumber, Address, City, Province, PostalCode, Phone, Date, <b class="rg">{</b>ItemNumber, SupplierItemNumber, SupplierDescription, Quantity, Cost, Amount<b class="rg">}</b>,  SubTotal, GST, Total)
+**PurchaseOrder** (<b class="pk">PurchaseOrderNumber</b>, SupplierName, SupplierNumber, Address, City, Province, PostalCode, Phone, Date, <b class="rg">ItemNumber, SupplierItemNumber, SupplierDescription, Quantity, Cost, Amount</b>,  SubTotal, GST, Total)
 
 ### 1NF
 

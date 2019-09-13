@@ -23,7 +23,7 @@ The following ERD represents the tables/entities from the Shipper Details View.
 
 ### 0NF
 
-**Order:** (<b class="pk">OrderNumber</b>, CustomerFirstName, CustomerLastName, CustomerNumber, Address, City, Province, PostalCode, Phone, OrderDate, <b class="rg">{ <b class="rg">{</b></b>ItemId, ItemDescription, OrderQuantity, ShipQuantity<b class="rg">}</b>, ShipperId, WaybillNumber, ShipDate<b class="rg">}</b>)
+**Order:** (<b class="pk">OrderNumber</b>, CustomerFirstName, CustomerLastName, CustomerNumber, Address, City, Province, PostalCode, Phone, OrderDate, <b class="rg"><b class="rg">ItemId, ItemDescription, OrderQuantity, ShipQuantity</b>, ShipperId, WaybillNumber, ShipDate</b>)
 
 ### 1NF
 
@@ -71,7 +71,7 @@ For the **OrderShipment**, it would be tempting to associate the `WaybillNumber`
 
 After performing Zero-Normal Form, a single table was generated: **Order**
 
-**Order**: (<b class="pk">OrderNumber</b>, CustomerFirstName, CustomerLastName, CustomerNumber, Address, City, Province, PostalCode, Phone, OrderDate, <b class="rg">{</b> <b class="rg">{</b> ItemId, ItemDescription, OrderQuantity, ShipQuantity<b class="rg">}</b> , ShipperId, WaybillNumber, ShipDate<b class="rg">}</b>)
+**Order**: (<b class="pk">OrderNumber</b>, CustomerFirstName, CustomerLastName, CustomerNumber, Address, City, Province, PostalCode, Phone, OrderDate, <b class="rg"> <b class="rg"> ItemId, ItemDescription, OrderQuantity, ShipQuantity</b> , ShipperId, WaybillNumber, ShipDate</b>)
 
 ### 1NF
 

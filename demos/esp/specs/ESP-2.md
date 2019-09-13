@@ -23,7 +23,7 @@ This form was analyzed according to the rules of 0NF (Zero-Normal Form), 1NF (Fi
 
 After performing Zero-Normal Form, a single table was generated: **PaymentsLog**.
 
-**PaymentsLog:** (<b class="pk">OrderNumber</b>, OrderDate, OrderTotal, FirstName, LastName, CustomerNumber, <b class="rg">{</b>Date, PaymentAmount, PaymentNumber, BalanceOwing, PaymentType, DepositBatchNumber<b class="rg">}</b>)
+**PaymentsLog:** (<b class="pk">OrderNumber</b>, OrderDate, OrderTotal, FirstName, LastName, CustomerNumber, <b class="rg">Date, PaymentAmount, PaymentNumber, BalanceOwing, PaymentType, DepositBatchNumber</b>)
 
 ### 1NF
 
