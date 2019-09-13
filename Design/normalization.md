@@ -164,12 +164,6 @@ p { white-space: nowrap; }
     padding:3px;
     text-align:center;
 }
-.rg {
-    display: inline-block;
-    color: inherit;
-    font-size: 1em;
-    font-weight: normal;
-}
 .rg::before {
     content: '\007B';
     color: darkorange;
@@ -181,6 +175,12 @@ p { white-space: nowrap; }
     color: darkorange;
     font-size: 1.2em;
     font-weight: bold;
+}
+.rg {
+    display: inline-block;
+    color: inherit;
+    font-size: 1em;
+    font-weight: normal;
 }
 .note {
     font-weight: bold;
