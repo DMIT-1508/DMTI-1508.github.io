@@ -68,6 +68,58 @@ A key part of walking through the normalization steps is to **be consistent**.
 
 ## A Simple Example
 
+Imagine a form that looks like this:
+
+![Sample Form](./SampleForm.png)
+
+### 0NF - Identifying Metadata
+
+**Entity:** (<b class="pk">OrderNumber</b>, Date, CustomerNumber, FirstName, LastName, Address, City, Province, PostalCode, Phone, <b class="rg">ItemNumber, Description, Quantity, Price, Amount</b>)
+
+### 1NF - Repeating Groups
+
+### 2NF - Partial Dependencies
+
+### 3NF - Transitive Dependencies
+
+### ERD
+
+![Simple ERD](./Logical-ERD.svg)
 
 ## A Complex Example
 
+----
+
+<style type="text/css">
+.pk {
+    font-weight: bold;
+    display: inline-block;
+    border: solid thin blue;
+    padding: 0 1px;
+}
+.fk {
+    color: green;
+    font-style: italic;
+    text-decoration: wavy underline green;    
+}
+.rg {
+    display: inline-block;
+}
+.rg::before {
+    content: '{'
+    color: darkorange;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.rg::after {
+    content: '}'
+    color: darkorange;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.note {
+    font-weight: bold;
+    color: brown;
+    font-size: 1.1em;
+}
+</style>
