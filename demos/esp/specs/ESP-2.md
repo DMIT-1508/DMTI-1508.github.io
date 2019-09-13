@@ -64,30 +64,3 @@ These are the tables/entities after normalizing the Payment Log View.
 The following ERD for the *Payment Log View* is based on the final 3<sup>rd</sup> normal form.
 
 ![](./ESP-2-ERD-PaymentLogView.png)
-
-
-----
-
-<style type="text/css">
-.pk {
-    font-weight: bold;
-    display: inline-block;
-    border: solid thin blue;
-    padding: 0 1px;
-}
-.fk {
-    color: green;
-    font-style: italic;
-    text-decoration: wavy underline green;    
-}
-.rg {
-    color: darkorange;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-.note {
-    font-weight: bold;
-    color: brown;
-    font-size: 1.1em;
-}
-</style>

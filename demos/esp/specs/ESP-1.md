@@ -89,28 +89,3 @@ The following ERD for the *Customer Orders View* is based on the final 3<sup>rd<
 
 ![](./ESP-1-ERD-CustomerOrdersView.png)
 
-----
-
-<style type="text/css">
-.pk {
-    font-weight: bold;
-    display: inline-block;
-    border: solid thin blue;
-    padding: 0 1px;
-}
-.fk {
-    color: green;
-    font-style: italic;
-    text-decoration: wavy underline green;    
-}
-.rg {
-    color: darkorange;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-.note {
-    font-weight: bold;
-    color: brown;
-    font-size: 1.1em;
-}
-</style>

@@ -103,7 +103,6 @@ Imagine a form that looks like this:
 ----
 
 <style type="text/css">
-p { white-space: nowrap; }
 .md {
     display: inline-block;
     vertical-align: top;

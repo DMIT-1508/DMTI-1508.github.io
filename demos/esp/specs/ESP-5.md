@@ -121,30 +121,3 @@ After performing Third-Normal Form, an additional table was generated: **Custome
 ### ERD
 
 <!-- ![](./ESP-5-ERD-OrderShipment.png)-->
-
-----
-
-<style type="text/css">
-.pk {
-    font-weight: bold;
-    display: inline-block;
-    border: solid thin blue;
-    padding: 0 1px;
-}
-.fk {
-    color: green;
-    font-style: italic;
-    text-decoration: wavy underline green;    
-    padding: 2px 0;
-}
-.rg {
-    color: darkorange;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-.note {
-    font-weight: bold;
-    color: brown;
-    font-size: 1.1em;
-}
-</style>
