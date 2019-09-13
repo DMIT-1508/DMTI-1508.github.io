@@ -106,13 +106,13 @@ Imagine a form that looks like this:
     display: inline-block;
 }
 .rg::before {
-    content: '{'
+    content: '\007B'
     color: darkorange;
     font-size: 1.2em;
     font-weight: bold;
 }
 .rg::after {
-    content: '}'
+    content: '\007D'
     color: darkorange;
     font-size: 1.2em;
     font-weight: bold;
