@@ -128,7 +128,7 @@ p { white-space: nowrap; }
 }
 .pk::before {
     content: 'P';
-    font-size:.5em;
+    font-size:.55em;
     font-weight: bold;
     color: white;
     background-color: #72c4f7;
