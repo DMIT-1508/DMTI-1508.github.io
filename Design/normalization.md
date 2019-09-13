@@ -108,15 +108,44 @@ p { white-space: nowrap; }
     font-weight: bold;
 }
 .pk {
-    font-weight: bold;
+    font-weight: 700;
     display: inline-block;
+    border: thin solid #00f;
+    padding: 0 2px;
+    position: relative;
+}
+.pk::before {
+    content: 'PK';
+    font-size:.5em;
+    position: absolute;
+    left: -5px;
+    top: -12px;
+    background-color: white;
+    border-radius: 50%;
     border: solid thin blue;
-    padding: 0 1px;
+    width: 1.4em;
+    height: 1.4em;
+    padding:3px;
+    text-align:center;
 }
 .fk {
     color: green;
     font-style: italic;
     text-decoration: wavy underline green;    
+}
+.fk::before {
+    content: 'F';
+    font-size:.65em;
+    position: absolute;
+    left: -1px;
+    bottom: -17px;
+    background-color: white;
+    border-radius: 50%;
+    border: dashed thin green;
+    width: 1.4em;
+    height: 1.4em;
+    padding:3px;
+    text-align:center;
 }
 .rg {
     display: inline-block;
