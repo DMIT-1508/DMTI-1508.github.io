@@ -74,7 +74,7 @@ Imagine a form that looks like this:
 
 ### 0NF - Identifying Metadata
 
-**Entity:** (<b class="pk">OrderNumber</b>, Date, CustomerNumber, FirstName, LastName, Address, City, Province, PostalCode, Phone, <b class="rg">ItemNumber, Description, Quantity, Price, Amount</b>)
+**Entity:** <span class="md"><b class="pk">OrderNumber</b>, Date, CustomerNumber, FirstName, LastName, Address, City, Province, PostalCode, Phone, <b class="rg">ItemNumber, Description, Quantity, Price, Amount</b>, Subtotal, GST, Total</span>
 
 ### 1NF - Repeating Groups
 
@@ -91,6 +91,19 @@ Imagine a form that looks like this:
 ----
 
 <style type="text/css">
+.md {
+    display: inline-block;
+}
+.md::before {
+    content: '(';
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.md::after {
+    content: ')';
+    font-size: 1.2em;
+    font-weight: bold;
+}
 .pk {
     font-weight: bold;
     display: inline-block;
