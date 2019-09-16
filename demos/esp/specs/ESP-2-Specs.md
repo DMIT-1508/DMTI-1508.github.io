@@ -28,7 +28,9 @@ When a payment is made, ESP goes through the following process (worst case scena
 
 ESP has indicated that there are never any over payments made and refunds or cancellations are never issued.
 
+<!--
 ESP has also indicated that they would like the new system to only allow specific payment types so they can monitor usage of each type.
+-->
 
 You are to take the information provided above and prepare a set of **3NF** relational entities and produce a relational **3NF ERD.**
 
