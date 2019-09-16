@@ -15,11 +15,11 @@ This form was analyzed according to the rules of 0NF (Zero-Normal Form), 1NF (Fi
 
 After performing Zero-Normal Form, a single table was generated: **ChequeRegister**.
 
-**ChequeRegister** (<b class="rg">{</b>Date, ChequeNumber, ChequeAmount, SupplierNumber, SupplierName, <b class="rg">{</b>PurchaseOrderNumber, PODate<b class="rg">}</b> <b class="rg">}</b>)
+**ChequeRegister** (<b class="rg">Date, ChequeNumber, ChequeAmount, SupplierNumber, SupplierName, <b class="rg">PurchaseOrderNumber, PODate</b> </b>)
 
 > Note that there are two sets of repeating groups - one within the other. Also note that there is nothing outside of both repeating groups. When there is no information outside of all the repeating groups, and there is only one outermost repeating group, you can effectivly ignore that as a repeating group; the outermost curly braces become a lot like extra parenthesis in an arithmetic expression: `(2 * (3 + 4))` is the same as writing `2 * (3 + 4)`.
 
-**ChequeRegister** (<b class="pk">ChequeNumber</b>, Date, ChequeAmount, SupplierNumber, SupplierName, <b class="rg">{</b>PurchaseOrderNumber, PODate<b class="rg">}</b>)
+**ChequeRegister** (<b class="pk">ChequeNumber</b>, Date, ChequeAmount, SupplierNumber, SupplierName, <b class="rg">PurchaseOrderNumber, PODate</b>)
 
 ### 1NF
 
@@ -48,29 +48,3 @@ After performing Third-Normal Form, a single table was generated: **Supplier**.
 ### ERD
 
 ![](./ESP-4-ERD-Cheque-Register-View.png)
-
-----
-
-<style type="text/css">
-.pk {
-    font-weight: bold;
-    display: inline-block;
-    border: solid thin blue;
-    padding: 0 1px;
-}
-.fk {
-    color: green;
-    font-style: italic;
-    text-decoration: wavy underline green;    
-}
-.rg {
-    color: darkorange;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-.note {
-    font-weight: bold;
-    color: brown;
-    font-size: 1.1em;
-}
-</style>

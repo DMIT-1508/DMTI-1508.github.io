@@ -74,13 +74,25 @@ Imagine a form that looks like this:
 
 ### 0NF - Identifying Metadata
 
-**Entity:** (<b class="pk">OrderNumber</b>, Date, CustomerNumber, FirstName, LastName, Address, City, Province, PostalCode, Phone, <b class="rg">ItemNumber, Description, Quantity, Price, Amount</b>)
+**Order:** <span class="md"><b class="pk">OrderNumber</b>, Date, CustomerNumber, FirstName, LastName, Address, City, Province, PostalCode, Phone, <b class="rg">ItemNumber, Description, Quantity, Price, Amount</b>, Subtotal, GST, Total</span>
 
 ### 1NF - Repeating Groups
 
+**Order:** <span class="md"><b class="pk">OrderNumber</b>, Date, CustomerNumber, FirstName, LastName, Address, City, Province, PostalCode, Phone, Subtotal, GST, Total</span>
+
+**OrderDetails:** <span class="md"><b class="pk"><i class="fk">OrderNumber</i>, ItemNumber</b>, Description, Quantity, Price, Amount</span>
+
 ### 2NF - Partial Dependencies
 
+**OrderDetails:** <span class="md"><b class="pk"><i class="fk">OrderNumber</i>, <i class="fk">ItemNumber</i></b>, Quantity, Price, Amount</span>
+
+**Item:** <span class="md"><b class="pk"><i class="fk">OrderNumber</i>, ItemNumber</b>, Description</span>
+
 ### 3NF - Transitive Dependencies
+
+**Order:** <span class="md"><b class="pk">OrderNumber</b>, Date, <i class="fk">CustomerNumber</i>, Subtotal, GST, Total</span>
+
+**Customer:** <span class="md"><b class="pk">CustomerNumber</b>, FirstName, LastName, Address, City, Province, PostalCode, Phone</span>
 
 ### ERD
 
@@ -91,31 +103,83 @@ Imagine a form that looks like this:
 ----
 
 <style type="text/css">
-.pk {
-    font-weight: bold;
+.md {
     display: inline-block;
+    vertical-align: top;
+    white-space:normal;
+}
+.md::before {
+    content: '(';
+    font-size: 1.25em;
+    font-weight: bold;
+}
+.md::after {
+    content: ')';
+    font-size: 1.25em;
+    font-weight: bold;
+}
+.pk {
+    font-weight: 700;
+    display: inline-block;
+    border: thin solid #00f;
+    padding: 0 2px;
+    position: relative;
+}
+.pk::before {
+    content: 'P';
+    font-size:.55em;
+    font-weight: bold;
+    color: white;
+    background-color: #72c4f7;
+    position: absolute;
+    left: -5px;
+    top: -15px;
+    border-radius: 50%;
     border: solid thin blue;
-    padding: 0 1px;
+    width: 1.4em;
+    height: 1.4em;
+    padding:3px;
+    text-align:center;
 }
 .fk {
     color: green;
     font-style: italic;
-    text-decoration: wavy underline green;    
+    text-decoration: wavy underline green;
+    padding: 0 2px;
+    position: relative;
 }
-.rg {
-    display: inline-block;
+.fk::before {
+    content: 'F';
+    font-size:.65em;
+    position: absolute;
+    left: -1px;
+    bottom: -17px;
+    color:darkgreen;
+    background-color: #a7dea7;
+    border-radius: 50%;
+    border: dashed thin green;
+    width: 1.4em;
+    height: 1.4em;
+    padding:3px;
+    text-align:center;
 }
 .rg::before {
-    content: '\007B'
+    content: '\007B';
     color: darkorange;
     font-size: 1.2em;
     font-weight: bold;
 }
 .rg::after {
-    content: '\007D'
+    content: '\007D';
     color: darkorange;
     font-size: 1.2em;
     font-weight: bold;
+}
+.rg {
+    display: inline-block;
+    color: inherit;
+    font-size: 1em;
+    font-weight: normal;
 }
 .note {
     font-weight: bold;

@@ -15,7 +15,7 @@ The following is a sample pickup sheet for one of the drivers.
 
 ### 0NF – Identify Meta-data
 
-**PickupSheet** (<b class="pk">PickupSheetId<sup>†</sup></b>, DriverId<sup>‡</sup>, DriverFirstName, DriverLastName, Date <b class="rg">{</b>SupplierId, SupplierName, Address <b class="rg">{</b>PurchaseOrderNumber, <b class="rg">{</b>ItemNumber, Quantity, PickupQuantity<b class="rg">} } }</b>)
+**PickupSheet** (<b class="pk">PickupSheetId<sup>†</sup></b>, DriverId<sup>‡</sup>, DriverFirstName, DriverLastName, Date <b class="rg">SupplierId, SupplierName, Address <b class="rg">PurchaseOrderNumber, <b class="rg">ItemNumber, Quantity, PickupQuantity</b></b></b>)
 
 > **Notes:**
 > **†** - PickupSheetId is a technical key that was introduced in 0NF to uniquely identify each pickup sheet.
@@ -48,29 +48,3 @@ The following is a sample pickup sheet for one of the drivers.
 ### ERD
 
 ![](./ESP-6-ERD-Driver-Details-View.png)
-
-----
-
-<style type="text/css">
-.pk {
-    font-weight: bold;
-    display: inline-block;
-    border: solid thin blue;
-    padding: 0 1px;
-}
-.fk {
-    color: green;
-    font-style: italic;
-    text-decoration: wavy underline green;    
-}
-.rg {
-    color: darkorange;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-.note {
-    font-weight: bold;
-    color: brown;
-    font-size: 1.1em;
-}
-</style>

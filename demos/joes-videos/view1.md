@@ -36,25 +36,3 @@ This legend is a guide to reading and interpreting the table listings under 0NF 
 **VideoRental:** (<b class="pk">TransactionId</b>, Date, <u class="fk">CustomerId</u>, Subtotal, GST, Total)
 
 **Customer:** (<b class="pk">CustomerId</b>, FirstName, LastName, Phone, StreetAddress, City, Province, PostalCode)
-
-
-----
-
-<style type="text/css">
-.pk {
-    font-weight: bold;
-    display: inline-block;
-    border: solid thin blue;
-    padding: 0 1px;
-}
-.fk {
-    color: green;
-    font-style: italic;
-    text-decoration: wavy underline green;
-}
-.rg {
-    color: darkorange;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-</style>

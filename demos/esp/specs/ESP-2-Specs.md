@@ -36,6 +36,6 @@ You are to take the information provided above and prepare a set of **3NF** rela
 
 NOTE: It can be helpful to see more samples of a given form/view in order to better understand the data and metadata. Here are a few more Payment Logs to consider in your analysis.
 
-![](./ESP-2-Payments-Log-View-B.png)
-![](./ESP-2-Payments-Log-View-C.png)
+![Alt Payments Log](./ESP-2-Payments-Log-View-B.png)
+![Alt Payments Log](./ESP-2-Payments-Log-View-C.png)
 

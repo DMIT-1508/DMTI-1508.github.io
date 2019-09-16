@@ -57,29 +57,3 @@ ItemNumber | Description | CurrentPrice<sup>&dagger;</sup>
 - Each **OrderDetail** *must be* <u>a sale of</u> *one and only one* **Item**.
 
 ![](./ESP-1-ERD-CustomerOrdersView.png)
-
-----
-
-<style type="text/css">
-.pk {
-    font-weight: bold;
-    display: inline-block;
-    border: solid thin blue;
-    padding: 0 1px;
-}
-.fk {
-    color: green;
-    font-style: italic;
-    text-decoration: wavy underline green;    
-}
-.gr {
-    color: darkorange;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-.note {
-    font-weight: bold;
-    color: brown;
-    font-size: 1.1em;
-}
-</style>
