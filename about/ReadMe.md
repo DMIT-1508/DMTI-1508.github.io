@@ -21,6 +21,7 @@ This site contains numerous examples and information that is available primarily
 For this course, you will need the following software installed on your machine.
 
 - SQL Server 2017, Developer Edition
+- [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017)
 - Visual Studio Code
 - GitHub Desktop
 
