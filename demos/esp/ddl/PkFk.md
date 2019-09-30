@@ -36,8 +36,8 @@ CREATE TABLE Orders
         IDENTITY(200, 1)                NOT NULL,
     CustomerNumber  int
         -- Foreign Key constraints ensure that when a row of data is being
-        -- inserted or updated, there is a row in the referenced table
-        -- that has the same value as its Primary Key
+        -- inserted or updated in this table, there is a row in the
+        -- referenced table that has the same value in its Primary Key.
         CONSTRAINT FK_Orders_CustomerNumber_Customers_CustomerNumber
             FOREIGN KEY REFERENCES
             Customers(CustomerNumber)   NOT NULL,
