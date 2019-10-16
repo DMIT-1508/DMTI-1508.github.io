@@ -14,7 +14,7 @@ title: Alter Table
  * **************************/
 
 -- A) Allow Address, City, Province, and Postal Code to be NULL
---    SQL requires each column to be altered SEPARATELY.
+--  SQL requires each column to be altered SEPARATELY.
 ALTER TABLE Customers
     ALTER COLUMN [Address] varchar(40) NULL
 GO -- this statement helps to "separate" various DDL statements in our script. It's optional.
@@ -32,9 +32,9 @@ ALTER TABLE Customers
 GO
 
 -- B) Add a check constraint on the First and Last name to require at least two letters.
---    % is a wildcard for zero or more characters (letter, digit, or other character)
---    _ is a wildcard for a single character (letter, digit, or other character)
---    [] are used to represent a range or set of characters that are allowed
+--  % is a wildcard for zero or more characters (letter, digit, or other character)
+--  _ is a wildcard for a single character (letter, digit, or other character)
+--  [] are used to represent a range or set of characters that are allowed
 IF OBJECT_ID('CK_Customers_FirstName', 'C') IS NOT NULL -- 'C' specifies that I'm looking for a constraint
     ALTER TABLE Customers DROP CONSTRAINT CK_Customers_FirstName
 
@@ -77,8 +77,8 @@ INSERT INTO Customers(FirstName, LastName)
 */
 
 -- C) Add an extra bit of information on the Customer table. The client wants to
---    start tracking customer emails, so they can send out statements for
---    outstanding payments that are due at the end of the month.
+--  start tracking customer emails, so they can send out statements for
+--  outstanding payments that are due at the end of the month.
 ALTER TABLE Customers
     ADD Email varchar(30) NULL
     -- Adding this as a nullable column, because customers already

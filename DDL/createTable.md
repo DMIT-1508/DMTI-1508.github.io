@@ -4,14 +4,14 @@
 
 Most commercial DBMS use the relational model. Under the relational model, all data stored in the database is kept in tables. A table is a two-dimensional array and consists of rows and columns. Each column records one attribute while each row records the values for all attributes that describe one instance of data. For example, we could use a table to record information about Invoices. If we needed to record the Invoice Number, Invoice Date, the Number of the Customer whom the invoice is for and the Total Amount Owing for the Invoice we would need four columns in the table. Each row in the table would record the information for one specific invoice.
 
-{ "Name" : "Invoices", "Columns" : \["Invoice Number", "Invoice Date", "Customer Number", "Total"\], "Rows" : \[ \[100, "Jan 10, 2000", 7, 100.00\], \[101, "Jan 11, 2000", 20, 75.00\], \[102, "Jan 12, 2000", 7, 75.00\] \] }
+{ "Name" : "Invoices", "Columns" : ["Invoice Number", "Invoice Date", "Customer Number", "Total"], "Rows" : [ [100, "Jan 10, 2000", 7, 100.00], [101, "Jan 11, 2000", 20, 75.00], [102, "Jan 12, 2000", 7, 75.00] ] }
 
 The CREATE TABLE statement defines a table object in the database. The Create Table statement specifies the name of the table and information about each column in the table. This includes:
 
--   The name of the column
--   The data type of the column
--   Whether null is an acceptable value for the column
--   Constraints that must hold true for the column
+- The name of the column
+- The data type of the column
+- Whether null is an acceptable value for the column
+- Constraints that must hold true for the column
 
 The basic syntax for the Create Table statement is shown below:
 
@@ -118,8 +118,8 @@ You cannot drop a table that is being referenced by a foreign key in another tab
 
 The DBMS will let you drop a table that still has data in it. Dropping a table deletes:
 
--   all data in the table
--   the definition of the table
+- all data in the table
+- the definition of the table
 
 Be sure you want delete a table before issuing the Drop Table statement.
 
@@ -129,14 +129,14 @@ To re-create a table definition you must drop the old table before you can re-cr
 
 Given the following ERD, create a script file that will:
 
--   create the Employee, EmployeeOnProject and Project tables
--   use appropriate data types for all attributes
--   do not worry about defining primary or foreign keys at this stage
--   do not allow nulls in any columns
--   all EmployeeIds are 11 characters long
--   use the identity property for the ProjectNumber column in the Project table
--   do not use the identity property for the ProjectNumber column in the EmployeeOnProject table
--   list the table definitions using the SP_HELP system procedure
+- create the Employee, EmployeeOnProject and Project tables
+- use appropriate data types for all attributes
+- do not worry about defining primary or foreign keys at this stage
+- do not allow nulls in any columns
+- all EmployeeIds are 11 characters long
+- use the identity property for the ProjectNumber column in the Project table
+- do not use the identity property for the ProjectNumber column in the EmployeeOnProject table
+- list the table definitions using the SP_HELP system procedure
 
 ERD
 

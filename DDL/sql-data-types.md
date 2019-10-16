@@ -2,14 +2,14 @@
 
 The data type of a column (attribute) in a table determines how the column is:
 
--   accessed
--   indexed
--   physically stored on the storage media (i.e. disk)
+- accessed
+- indexed
+- physically stored on the storage media (i.e. disk)
 
 A brief description of some of the data types in SQL Server follows. More information can be found at:
 
--   Online help (transact-SQL help)
--   SQL Server Books online
+- Online help (transact-SQL help)
+- SQL Server Books online
 
 char
 

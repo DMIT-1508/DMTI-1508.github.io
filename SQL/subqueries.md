@@ -1,10 +1,10 @@
 # Subqueries
 
--   Subqueries Overview
--   Subqueries vs. Joins (with examples)
--   Subqueries Required (with examples)
--   Practice
--   Practice Solution
+- Subqueries Overview
+- Subqueries vs. Joins (with examples)
+- Subqueries Required (with examples)
+- Practice
+- Practice Solution
 
 - - -
 
@@ -18,15 +18,15 @@ There are two types of subqueries. They are Nested and Correlated. In this cours
 
 Let's take a look at the following Select statement that uses a subquery:
 
-\[\[code quote\]\]
+[[code quote]]
 
 The subquery (inner query) executes one and returns on or more values and then the outer query executes using the value(s) returned from the subquery.
 
-\[\[code quote\]\]
+[[code quote]]
 
 Inner query (subquery) executes first and returns value(s)
 
-\[\[code quote\]\]
+[[code quote]]
 
 The outer query then executes using the results of the subquery as criteria for the where clause. The results of the Select executing are:
 
@@ -48,7 +48,7 @@ One of the most common uses of a subquery is to retrieve a list of values that i
 
 To see all the student Names that have made payments
 
-\[\[code quote\]\]
+[[code quote]]
 
 Breaking it down …
 
@@ -57,7 +57,7 @@ Breaking it down …
 
 What happens when you run this Select statement?
 
-\[\[code quote\]\]
+[[code quote]]
 
 Subquery returned more than 1 value. This is not permitted when the subquery follows =, !=, <, <= , >, >= or when the subquery is used as an expression.
 
@@ -65,13 +65,13 @@ Remember, when using = there must be only one value on each side. If the subquer
 
 What if I wanted to see all students that have never made a payment?
 
-\[\[code quote\]\]
+[[code quote]]
 
 Extra Geek point!
 
 In the previous example when the subquery selects all the StudentID's from the payment table you end up with a lot of duplicate StudentID values. This may seem inefficient when you could write the subquery like this:
 
-\[\[code quote\]\]
+[[code quote]]
 
 Remember, distinct only returns unique values and not duplicate. Actual testing reveals that using distinct in the subquery to return unique values is actually slower. Keep in mind, that there is some overhead in the selecting of only distinct values VS simply selecting all of them.
 
@@ -79,7 +79,7 @@ Any, Some and All Operators
 
 So far our subqueries have returned values to be used as criteria for an exact match by the outer query.
 
-\[\[code quote\]\]
+[[code quote]]
 
 What if we want something other than an exact match?
 
@@ -87,13 +87,13 @@ The ANY or SOME (for SQL they are interchangeable) operators lets you use even m
 
 SOME compares against any of the values retrieved by the subquery
 
-\[\[code quote\]\]
+[[code quote]]
 
 If the Grade being selected by the outer query is greater than any of the grades returned by the subquery then the record is returned.
 
 The ALL operator compares against all of the values retrieved by the subquery
 
-\[\[code quote\]\]
+[[code quote]]
 
 If the Grade being selected by the outer query is greater than all of the grades returned by the subquery then the record is returned.
 
@@ -101,13 +101,13 @@ We can use these operators to perform some more complicate selects. Subqueries c
 
 Select the City that has the highest number of students in it.
 
-\[\[code quote\]\]
+[[code quote]]
 
 In this example we used the subquery as criteria in the having clause.
 
 Breaking it down:
 
-1.  Subquery executes first and returns values. \[\[code quote\]\]
+1.  Subquery executes first and returns values. [[code quote]]
 2.  Outer query executes comparing the count of students in each city to see which count(s) are greater/equal than or equal to all the ones in the subquery. The record from the outer query that is equal to the highest one in the subquery is the city with the most students.
 
 Correlated Subqueries

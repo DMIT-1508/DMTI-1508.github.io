@@ -10,20 +10,20 @@ Most commercial DBMS use the relational model. Under the relational model, all d
 
 Constraints are used to:
 
--   Define the primary key for the table.
-    -   Implemented via the definition of the primary key constraint.
--   Define relationships between tables.
-    -   Implemented via the definition of the foreign key constraint.
--   Define a default value for a column. This default value can be used when new rows are inserted (added) into a table.
-    -   Implemented via the definition of the default constraint.
--   Define a domain of valid values that a column can assume.
-    -   Implemented via the definition of the check constraint.
--   Ensure that all values in a column are unique.
+- Define the primary key for the table.
+    - Implemented via the definition of the primary key constraint.
+- Define relationships between tables.
+    - Implemented via the definition of the foreign key constraint.
+- Define a default value for a column. This default value can be used when new rows are inserted (added) into a table.
+    - Implemented via the definition of the default constraint.
+- Define a domain of valid values that a column can assume.
+    - Implemented via the definition of the check constraint.
+- Ensure that all values in a column are unique.
 
 Constraints can be defined:
 
--   When the table is initially created, as part of the CREATE TABLE statement or,
--   For an existing table, via the ALTER TABLE statement.
+- When the table is initially created, as part of the CREATE TABLE statement or,
+- For an existing table, via the ALTER TABLE statement.
 
 We use the CONSTRAINT keyword to define a constraint. A single column can have multiple constraints, each with its own constraint keyword definition. Each constraint must have a unique name. The constraint name is used in SQL messages, so use descriptive constraint names. We will use a prefix, as part of the constraint name, to identify the type of constraint:
 

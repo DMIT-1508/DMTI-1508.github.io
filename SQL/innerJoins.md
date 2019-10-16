@@ -1,10 +1,10 @@
 # Inner Joins
 
--   Concepts of Joining Tables
--   Two-Table Inner Joins
--   Joining more than two tables
--   Practice
--   Practice Solution
+- Concepts of Joining Tables
+- Two-Table Inner Joins
+- Joining more than two tables
+- Practice
+- Practice Solution
 
 - - -
 
@@ -16,7 +16,7 @@ If you wanted to select all the staff names and their position descriptions you 
 
 According to the syntax of a Select statement you could write a select statement as follows:
 
-\[\[code quote\]\]
+[[code quote]]
 
 When you run this Select statement you return 70 records. This may seem like the correct select statement as there were no errors. However, closer inspection of the data in the two tables involved leads to some questions.
 
@@ -43,7 +43,7 @@ Syntax for Joins
 
 The Staff and Position problem using the correct syntax:
 
-\[\[code quote\]\]
+[[code quote]]
 
 The INNER JOIN syntax tells the server that we are performing an inner join and identifies that PositionID is the field in the 2 tables that relate them together.
 
@@ -53,11 +53,11 @@ An Outer Join is different in that it returns all the parent records, including 
 
 We will discuss Left Outer Joins and Right Outer Joins. These both have the same purpose and you choose which one to use based on the order you list your tables in your select statement.
 
-\[\[code quote\]\]
+[[code quote]]
 
 or
 
-\[\[code quote\]\]
+[[code quote]]
 
 Notice the difference between the Left and Right Outer Join?
 
@@ -71,17 +71,17 @@ Although not necessary, joins are often coded with the parent table on the left 
 
 Why would you likely never see this Select statement and why does it not make sense?
 
-\[\[code quote\]\]
+[[code quote]]
 
 This select says select ALL the staff records and the related records from Position. Since the Staff table is the child table, all the staff records must have a matching parent record in the Position table. Remember, all child records must have a matching parent record.
 
 The difference between INNER and OUTER JOIN:
 
-\[\[code quote\]\]
+[[code quote]]
 
 (returns 33 records)
 
-\[\[code quote\]\]
+[[code quote]]
 
 (returns 42 records)
 
@@ -93,7 +93,7 @@ An Outer Join returns ALL the Parent records (students) even if they do not have
 
 Consider the following Select statement which is now selecting the StudentID field as well:
 
-\[\[code quote\]\]
+[[code quote]]
 
 This will result in an error:
 
@@ -101,7 +101,7 @@ Ambiguous column name 'StudentID'.
 
 This error is due to the fact that we must state the table that we are selecting the fields from. Since StudentID is in both the Student and the Payment table, the server does not know which one to select. To solve this we need to adjust our syntax to identify which table the server should select the ambiguous column from.
 
-\[\[code quote\]\]
+[[code quote]]
 
 While it does not usually matter which table you select the ambiguous columns from it is almost always the parent table.
 
@@ -138,18 +138,18 @@ For example, consider the following problem:
 
 Select the Student Names, Payment Dates, and Payment Type Descriptions for all the students that have payments:
 
-\[\[code quote\]\]
+[[code quote]]
 
 Going back to non clustered indexes, do you see why we use them on foreign key fields? Everytime we need data that is in different tables we use joins and joins use foreign keys to relate the records in the parent table with their correct child records. Joins are very common in selecting data from a database and indexes help to spead up those join operations.
 
 ### JOINS SUMMARY
 
--   Joins enable us to select data that is from different, related tables
--   We use join expressions (syntax) to identify what the field is that joins each table in the relationship. This allows the select statement to return information in one table and its related information in another
--   Inner Joins only return parent records that have at least one matching child record
--   Outer Joins return all the parent records as well as the related child records
--   Left and Right Outer Joins perform the same task and you can use either one. You must use the correct one for the order you have the tables in the select statement
--   If you are selecting a field that exists in more than one table that you are selecting from you must specify which table to select from. Ambiguous column names errors result otherwise.
--   All the other clauses of a Select statement can be used with joins.
--   A join can be between 2 or more tables.
--   You do not need to select a field from each table you have in your join.
+- Joins enable us to select data that is from different, related tables
+- We use join expressions (syntax) to identify what the field is that joins each table in the relationship. This allows the select statement to return information in one table and its related information in another
+- Inner Joins only return parent records that have at least one matching child record
+- Outer Joins return all the parent records as well as the related child records
+- Left and Right Outer Joins perform the same task and you can use either one. You must use the correct one for the order you have the tables in the select statement
+- If you are selecting a field that exists in more than one table that you are selecting from you must specify which table to select from. Ambiguous column names errors result otherwise.
+- All the other clauses of a Select statement can be used with joins.
+- A join can be between 2 or more tables.
+- You do not need to select a field from each table you have in your join.

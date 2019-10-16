@@ -12,17 +12,17 @@ In the StoreInRegion table (child) the foreign key, CountryId and RegionId, rela
 
 The foreign key constraint defines referential integrity between two tables. Operations that affect the tables and or the data stored within the tables must comply with referential integrity. This affects:
 
--   Dropping tables.
--   Creating tables.
--   Inserting/Updating/Deleting rows in tables.
+- Dropping tables.
+- Creating tables.
+- Inserting/Updating/Deleting rows in tables.
 
 The bottom line for referential integrity is that a child row/table cannot exist without its associated parent row/table. Therefore:
 
--   You must Drop a child table BEFORE you Drop the associated parent table.
--   You must Create a parent table BEFORE you Create the associated child table.
--   The value of a column acting as a foreign key must be:
-    -   A value that exists as a primary key in the associated parent table, or
-    -   NULL
+- You must Drop a child table BEFORE you Drop the associated parent table.
+- You must Create a parent table BEFORE you Create the associated child table.
+- The value of a column acting as a foreign key must be:
+    - A value that exists as a primary key in the associated parent table, or
+    - NULL
 
 If we were to create a script file to drop the existing definition of the Store tables and recreate them we would sequence the commands in the following order:
 

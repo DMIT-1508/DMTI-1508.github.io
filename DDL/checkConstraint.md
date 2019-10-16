@@ -13,10 +13,10 @@ The check constraint name should begin with the prefix CK (identifies the constr
 
 The expression in the check constraint:
 
--   cannot contain a subquery
--   must evaluate to true or false
--   can be a compound Boolean expression
--   can reference another column in the same table
+- cannot contain a subquery
+- must evaluate to true or false
+- can be a compound Boolean expression
+- can reference another column in the same table
 
 Examples of check constraints:
 
@@ -103,13 +103,13 @@ _ (the underscore)
 
 Any single character
 
-\[\]
+[]
 
-Any single character within the specified range (\[a-z\]) or set (\[adrz\]) of characters
+Any single character within the specified range ([a-z]) or set ([adrz]) of characters
 
-\[^\]
+[^]
 
-Any single character not within the specified range (\[^a-z\]) or set (\[^adrz\]) of characters
+Any single character not within the specified range ([^a-z]) or set ([^adrz]) of characters
 
 Examples:
 
@@ -121,15 +121,15 @@ Like 'A%'
 
 First character must be A followed by any number of characters.
 
-Like '5\[%\]'
+Like '5[%]'
 
 First character must be 5; second character must be %. Data must be 2 characters in length.
 
-Like '\[0-9\]'
+Like '[0-9]'
 
 Must be a number. Data must be 1 character in length.
 
-Like '\[A-Z\]\[0-9\]\[A-Z\] \[0-9\]\[A-Z\]\[0-9\]'
+Like '[A-Z][0-9][A-Z] [0-9][A-Z][0-9]'
 
 Pattern for a Canadian postal code. Data must be 7 characters in length.
 
@@ -190,8 +190,8 @@ Note that the check constraint for DateReceived is defined as a table level cons
 
 To test a check constraint:
 
--   Use SP_Help to list the definition of the table. This ensures the constraint definition is in place and is correct.
--   Add a row to the table using data that violates the constraint. You should receive an error message and the row should not be added to the table.
+- Use SP_Help to list the definition of the table. This ensures the constraint definition is in place and is correct.
+- Add a row to the table using data that violates the constraint. You should receive an error message and the row should not be added to the table.
 
 ## Exercise
 

@@ -2,8 +2,8 @@
 
 The default constraint lets you define a value that is assigned to a column when the user does not specifically supply a value when a new row is added to the table (using the INSERT statement). A default constraint can be defined on any column except:
 
--   A column with the timestamp data type
--   A column with the identity property
+- A column with the timestamp data type
+- A column with the identity property
 
 The value of the default can be supplied via a constant or a function or it can be null. The default constraint name should use a prefix of DF (indicating this is a default constraint).
 

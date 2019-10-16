@@ -209,7 +209,7 @@ GO
  * **************************/
 
 -- A) Allow Address, City, Province, and Postal Code to be NULL
---    SQL requires each column to be altered SEPARATELY.
+--  SQL requires each column to be altered SEPARATELY.
 ALTER TABLE Customers
     ALTER COLUMN [Address] varchar(40) NULL
 GO -- this statement helps to "separate" various DDL statements in our script. It's optional.
@@ -227,9 +227,9 @@ ALTER TABLE Customers
 GO
 
 -- B) Add a check constraint on the First and Last name to require at least two letters.
---    % is a wildcard for zero or more characters (letter, digit, or other character)
---    _ is a wildcard for a single character (letter, digit, or other character)
---    [] are used to represent a range or set of characters that are allowed
+--  % is a wildcard for zero or more characters (letter, digit, or other character)
+--  _ is a wildcard for a single character (letter, digit, or other character)
+--  [] are used to represent a range or set of characters that are allowed
 IF OBJECT_ID('CK_Customers_FirstName', 'C') IS NOT NULL -- 'C' specifies that I'm looking for a constraint
     ALTER TABLE Customers DROP CONSTRAINT CK_Customers_FirstName
 
@@ -274,8 +274,8 @@ INSERT INTO Customers(FirstName, LastName)
 */
 
 -- C) Add an extra bit of information on the Customer table. The client wants to
---    start tracking customer emails, so they can send out statements for
---    outstanding payments that are due at the end of the month.
+--  start tracking customer emails, so they can send out statements for
+--  outstanding payments that are due at the end of the month.
 ALTER TABLE Customers
     ADD Email varchar(30) NULL
     -- Adding this as a nullable column, because customers already
@@ -299,7 +299,7 @@ IF OBJECT_ID('DF_Orders_Date', 'C') IS NOT NULL
 ALTER TABLE Orders
     ADD CONSTRAINT DF_Orders_Date
         DEFAULT GETDATE() FOR [Date]
---      Use     \ this  / for \this column/ if no value was supplied when INSERTING data
+--    Use     \ this  / for \this column/ if no value was supplied when INSERTING data
 GO
 -- To illustrate the default value, consider this sample row for the Orders table
 INSERT INTO Orders(CustomerNumber, Subtotal, GST)
@@ -322,20 +322,20 @@ FROM    InventoryItems
 GO
 
 -- F) Change the InventoryItems.ItemDescription column to be NOT NULL
---    WAIT!! We have described the ItemDescription as allowing NULL values.
---           That means we might have data in the table where the
---           ItemDescription doesn't exist.
---           If we try to make that column NOT NULL, what will we do about
---           the existing data in the database where it is "empty"??
---           We can fix that by updating the data in the database
---           where that description is missing.
+--  WAIT!! We have described the ItemDescription as allowing NULL values.
+--         That means we might have data in the table where the
+--         ItemDescription doesn't exist.
+--         If we try to make that column NOT NULL, what will we do about
+--         the existing data in the database where it is "empty"??
+--         We can fix that by updating the data in the database
+--         where that description is missing.
 UPDATE      InventoryItems
    SET      ItemDescription = '-missing-'
    WHERE    ItemDescription IS NULL
 GO
 -- Also Note: We might be asked to put a default value for the column
---            that will become required. In this case, let's use a
---            default value of '-no description-'
+--          that will become required. In this case, let's use a
+--          default value of '-no description-'
 ALTER TABLE InventoryItems
     ADD CONSTRAINT DF_InventoryItems_Description
         DEFAULT '-no description-' FOR ItemDescription
@@ -347,7 +347,7 @@ INSERT INTO InventoryItems(ItemNumber, CurrentSalePrice, InStockCount, ReorderLe
            ('GR47D', 92.45, 3, 3)
 GO
 
---   Now we can change the ItemDescription to be required (NOT NULL)
+-- Now we can change the ItemDescription to be required (NOT NULL)
 ALTER TABLE InventoryItems
     ALTER COLUMN ItemDescription varchar(50) NOT NULL
 GO
@@ -368,12 +368,12 @@ CREATE NONCLUSTERED INDEX IX_InventoryItems_ItemDescription
 -- ------------------------------------------
 
 -- H) Data change requests: All inventory items that are less than $5.00 have to
---    have their prices increased by 10%.
+--  have their prices increased by 10%.
 UPDATE InventoryItems
    SET CurrentSalePrice = CurrentSalePrice * 0.10
 WHERE  CurrentSalePrice < 5.00
 
---    Somebody got married....
+--  Somebody got married....
 UPDATE Customers
    SET LastName = 'Flintstone'
 WHERE  FirstName = 'Wilma' AND LastName = 'Slaghoople'
@@ -403,7 +403,7 @@ UPDATE InventoryItems
    SET CurrentSalePrice = CurrentSalePrice + 5.5
 WHERE  ItemDescription LIKE '%Belt%'
 
---    And, we want to get rid of some inventory
+--  And, we want to get rid of some inventory
 DELETE FROM InventoryItems
 WHERE  ItemNumber IN ('GR47D', 'KD5-Q')
 
