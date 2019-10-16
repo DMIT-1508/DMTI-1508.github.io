@@ -14,19 +14,19 @@ The `FROM` clause
 
 The `WHERE` clause
 
-:  Filtering to be done on the rows of data.
+  : Filtering to be done on the rows of data.
 
 The `GROUP BY` clause
 
-:  A list of columns to group the data by for aggregation operations.
+  : A list of columns to group the data by for aggregation operations.
 
 The `HAVING` clause
 
-:  Filtering to be done on aggregate values.
+  : Filtering to be done on aggregate values.
 
 The `ORDER BY` clause
 
-:  Sorting of the final result set.
+  : Sorting of the final result set.
 
 The full syntax available for a select statement can be expressed as:
 
