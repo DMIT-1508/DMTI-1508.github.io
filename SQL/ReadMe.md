@@ -5,22 +5,28 @@ Queries are used to retrieve data from the database. They can be very flexible i
 Queries are written with the `SELECT` statement. The `SELECT` syntax contains six clauses. In order, they are:
 
 The `SELECT` clause
-  ~ A comma-separated list of column data to generate.
+
+:  A comma-separated list of column data to generate.
 
 The `FROM` clause
-  ~ Identifies the table(s) used as the source of the data to generate/retreive.
+
+:  Identifies the table(s) used as the source of the data to generate/retreive.
 
 The `WHERE` clause
-  ~ Filtering to be done on the rows of data.
+
+:  Filtering to be done on the rows of data.
 
 The `GROUP BY` clause
-    ~ A list of columns to group the data by for aggregation operations.
+
+:  A list of columns to group the data by for aggregation operations.
 
 The `HAVING` clause
-  ~ Filtering to be done on aggregate values.
+
+:  Filtering to be done on aggregate values.
 
 The `ORDER BY` clause
-  ~ Sorting of the final result set.
+
+:  Sorting of the final result set.
 
 The full syntax available for a select statement can be expressed as:
 
