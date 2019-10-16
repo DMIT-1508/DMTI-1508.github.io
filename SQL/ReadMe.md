@@ -14,7 +14,7 @@ The `WHERE` clause
   ~ Filtering to be done on the rows of data.
 
 The `GROUP BY` clause
-  ~ A list of columns to group the data by for aggregation operations.
+    ~ A list of columns to group the data by for aggregation operations.
 
 The `HAVING` clause
   ~ Filtering to be done on aggregate values.
