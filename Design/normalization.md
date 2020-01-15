@@ -86,7 +86,7 @@ Imagine a form that looks like this:
 
 **OrderDetails:** <span class="md"><b class="pk"><i class="fk">OrderNumber</i>, <i class="fk">ItemNumber</i></b>, Quantity, Price, Amount</span>
 
-**Item:** <span class="md"><b class="pk"><i class="fk">OrderNumber</i>, ItemNumber</b>, Description</span>
+**Item:** <span class="md"><b class="pk">ItemNumber</b>, Description</span>
 
 ### 3NF - Transitive Dependencies
 
