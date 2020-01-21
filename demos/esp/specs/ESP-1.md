@@ -59,7 +59,7 @@ After performing First-Normal Form, a new table was generated: **OrderDetail**.
 
 After performing Second-Normal Form, another new table was generated: **Item**.
 
-**OrderDetail**	(<b class="pk"><u class="fk">OrderNumber</u>, ItemNumber</b>, Quantity,  SellingPrice, Amount)
+**OrderDetail**	(<b class="pk"><u class="fk">OrderNumber</u>, <u class="fk">ItemNumber</u></b>, Quantity,  SellingPrice, Amount)
 
 **Item**	(<b class="pk">ItemNumber</b>, Description, CurrentPrice)
 
