@@ -19,7 +19,7 @@ This form was analyzed according to the rules of 0NF (Zero-Normal Form), 1NF (Fi
 
 After performing Zero-Normal Form, a single table was generated: **Customer**.
 
-**Customer:** (<b class="pk">CustomerNumber</b>, FirstName. LastName, Address, City, Province, PostalCode, HomePhone)
+**Customer:** (<b class="pk">CustomerNumber</b>, FirstName, LastName, Address, City, Province, PostalCode, HomePhone)
 
 ### 1NF – 3NF
 
