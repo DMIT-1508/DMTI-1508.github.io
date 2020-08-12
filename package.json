@@ -23,7 +23,7 @@
     "markdown-it-mermaid": "^0.2.5",
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0",
-    "serialize-javascript": "2.1.1",
+    "serialize-javascript": "3.1.0",
     "vuepress": "1.2.0"
   }
 }
