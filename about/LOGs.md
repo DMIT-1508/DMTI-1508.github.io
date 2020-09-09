@@ -3,6 +3,24 @@ title: LOGs
 ---
 # Learning Outcome Guides (*LOGs*)
 
+## Version Control (for DBAs)
+
+At the end of this topic, you should be able to:
+
+- Define the acronym **DVCS**
+- List the benefits of using a version control system for this course <!--  -->
+- Create a new repository through the browser on GitHub.com
+- Install, configure, and identify the parts in a GUI tool to use with GitHub.com
+- Use a GUI tool to manage a git repository
+- Define the terms **clone**, **commit**
+- Describe the purpose of a `.gitignore` file
+- Describe the purpose of a `.gitattributes` file
+- Distinguish between a remote repository and a local repository
+- Synchronize a local repository with a remote repository
+- Describe the purpose of a `ReadMe.md` file
+- Define the term **Markdown**
+- List three benefits of using Markdown documents as opposed to tools such as Microsoft Word or languages like HTML <!-- 1. Focus on Content over Presentation, 2. Entirely text-based (as opposed to other formats), 3. Simple way to produce emphasis, lists, links, images, tables, code blocks, etc.  -->
+
 ## Introduction to Databases
 
 At the end of this topic, you should be able to:
