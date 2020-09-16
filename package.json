@@ -10,20 +10,20 @@
     "test": "vuepress build"
   },
   "devDependencies": {
-    "@vuepress/plugin-active-header-links": "1.2.0",
-    "@vuepress/plugin-back-to-top": "1.2.0",
-    "@vuepress/plugin-pwa": "1.2.0",
+    "@vuepress/plugin-active-header-links": "^1.5.4",
+    "@vuepress/plugin-back-to-top": "^1.5.4",
+    "@vuepress/plugin-pwa": "^1.5.4",
     "markdown-it-abbr": "^1.0.4",
     "markdown-it-checkbox": "^1.1.0",
-    "markdown-it-deflist": "^2.0.3",
+    "markdown-it-deflist": "^2.1.0",
     "markdown-it-footnote": "3.0.2",
     "markdown-it-imsize": "^2.0.1",
-    "markdown-it-kbd": "2.0.0",
+    "markdown-it-kbd": "^2.2.0",
     "markdown-it-mark": "3.0.0",
     "markdown-it-mermaid": "^0.2.5",
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0",
-    "serialize-javascript": "2.1.1",
-    "vuepress": "1.2.0"
+    "serialize-javascript": "^5.0.1",
+    "vuepress": "^1.5.4"
   }
 }
