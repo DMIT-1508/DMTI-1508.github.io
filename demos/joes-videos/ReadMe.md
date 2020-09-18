@@ -20,7 +20,7 @@ Business Rules:
 1. A customer may have a maximum of ten videos rented simultaneously.
 1. Joe knows the rental charges change over time so he wants the system to record the rental charge for each video on a transaction (historical information) as well as record the current rental charge for each video. 
 1. Transaction Id, Customer Id and Video Id are unique
-1. Copy Number is unique within Video Id (the first copy of any given video is copy number 1).
+1. We carry multiple physical copies of any given movie. Copy Number is unique within Video Id and helps to identify which copy is being rented.
 
 
 You are to produce a view schema in 3NF. Show the schema in ERD notation. Document any assumptions you make.
