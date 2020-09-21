@@ -13,11 +13,11 @@ This legend is a guide to reading and interpreting the table listings under 0NF 
 - (Column, Names) - Column names for a table will be enclosed in (rounded parenthesis).
 - <b class="pk">PrimaryKeyFields</b> - Primary key fields will be bold and inside a box. (e.g.: `<b class="pk">PrimaryKeyFields</b>`)
 - <u class="fk">ForeignKeyFields</u> - Foreign key fields will be a wavy underline in italic and green. (e.g.: `<u class="fk">ForeignKeyFields</u>`)
-- <b class="rg">{</b>Repeating Groups<b class="rg">}</b> - Groups of repeating fields will be identified in 0NF stage, and will be enclosed in orange curly braces. (e.g.: `<b class="rg">{</b>Repeating, Group, Fields<b class="rg">}</b>`)
+- <b class="rg">{Repeating Groups}</b> - Groups of repeating fields will be identified in 0NF stage, and will be enclosed in orange curly braces. (e.g.: `<b class="rg">{Repeating, Group, Fields}</b>`)
 
 ## 0NF
 
-**VideoRental:** (<b class="pk">TransactionId</b>, Date, CustomerId, FirstName, LastName, Phone, StreetAddress, City, Province, PostalCode, <b class="rg">{</b> VideoId, CopyNumber, Title, ReturnDate, RentalCharge, CurrentRentalCharge, <b class="rg">}</b> Subtotal, GST, Total)
+**VideoRental:** (<b class="pk">TransactionId</b>, Date, CustomerId, FirstName, LastName, Phone, StreetAddress, City, Province, PostalCode, <b class="rg">{ VideoId, CopyNumber, Title, ReturnDate, RentalCharge, CurrentRentalCharge, }</b> Subtotal, GST, Total)
 
 ## 1NF
 
