@@ -31,9 +31,9 @@ After performing First-Normal Form, a single table was generated: **OrderHistory
 
 After performing First-Normal Form, a single table was generated: **PurchaseOrder**.
 
-**OrderHistory** (<b class="pk"><u class="fk">ItemNumber</u>, <u class="fk">PONumber</u></b>, Quantity, Cost)
+**OrderHistory** (<b class="pk"><u class="fk">ItemNumber</u>, <u class="fk">PONumber</u></b>)
 
-**PurchaseOrder** (<b class="pk">PONumber</b>, SupplierNumber, Date)
+**PurchaseOrder** (<b class="pk">PONumber</b>, SupplierNumber, Date, Quantity, Cost)
 
 ### 3NF
 
