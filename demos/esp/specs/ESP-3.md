@@ -31,9 +31,13 @@ After performing First-Normal Form, a single table was generated: **OrderHistory
 
 After performing First-Normal Form, a single table was generated: **PurchaseOrder**.
 
-**OrderHistory** (<b class="pk"><u class="fk">ItemNumber</u>, <u class="fk">PONumber</u></b>)
+> **Q)** Why did I leave the `Quantity` and `Cost` in the **OrderHistory** entity while moving the `SupplierNumber` and `Date` to the **PurchaseOrder**?
+> 
+> **A)** 2NF is about *Partial Dependencies*, and I am looking to see if any of the attributes from **OrderHistory** were tightly related to ***only*** the `PONumber` attribute. It turns out that the `SupplierNumber` identifies the supplier for the Purchase Order and the `Date` identifies when the Purchase Order was placed. But, the `Quantity` describes the number of *Inventory Items* (`ItemNumber`) that were purchased (`PONumber`) and the `Cost` describes how much I paid for the item on that particular purchase order.
 
-**PurchaseOrder** (<b class="pk">PONumber</b>, SupplierNumber, Date, Quantity, Cost)
+**OrderHistory** (<b class="pk"><u class="fk">ItemNumber</u>, <u class="fk">PONumber</u></b>, Quantity, Cost)
+
+**PurchaseOrder** (<b class="pk">PONumber</b>, SupplierNumber, Date)
 
 ### 3NF
 
