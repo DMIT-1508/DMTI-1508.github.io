@@ -27,6 +27,8 @@ This legend is a guide to reading and interpreting the table listings under 0NF 
 
 ## 2NF
 
+> ***Note:** To Be Revised*
+
 **RentalDetail:** (<b class="pk"><u class="fk">TransactionId</u>, <u class="fk">VideoId</u>, CopyNumber</b>, ReturnDate, RentalCharge)
 
 **Video:** (<b class="pk">VideoId</b>, Title, CurrentRentalCharge)

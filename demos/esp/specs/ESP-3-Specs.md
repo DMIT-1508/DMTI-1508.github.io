@@ -19,7 +19,7 @@ ESP would like to be able to keep track of how many of each item they have *in s
 
 When items are ordered from suppliers a Purchase Order is created. A sample Purchase Order is shown below.
 
-[![Click for Editable Form - Inventory Control View](./ESP-3-Purchase-Orders-View.png)](./ESP-PurchaseOrders.md)
+[![Click for Editable Form - Inventory Control View](./ESP-3-Purchase-Orders-View.png)](./ESP-3-PurchaseOrders.md)
 
 Purchase Order (PO) numbers are unique and never reused. The same supplier always has the same *supplier number* (which *is also unique*) and the supplier details are hand-written on the PO every time.
 
