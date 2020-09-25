@@ -14,7 +14,7 @@ ESP allows its customers to make payments against their orders in several ways. 
 
 ESP keeps a payment log to keep track of all payments made against an order. Each order has its own log sheet. The log looks similar to the following:
 
-![](./ESP-2-Payments-Log-View-A.png)
+[![Click for Editable Form - Payments Log View](./ESP-2-Payments-Log-View-A.png)](./ESP-2-PaymentsLog.md)
 
 Note that a customer payment is applied against a single order.
 

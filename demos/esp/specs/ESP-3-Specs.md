@@ -9,7 +9,7 @@ ESP keeps track of its inventory using a paper based ledger system where purchas
 
 The system uses a form that looks as follows:
 
-![](./ESP-3-Inventory-Control-View.png)
+[![Click for Editable Form - Inventory Control View](./ESP-3-Inventory-Control-View.png)](./ESP-3-InventoryControlSheet.md)
 
 Item Numbers are unique and never reused. The Inventory Control Sheet records details of each item as well as all orders of that particular item from any given supplier.
 
@@ -19,7 +19,7 @@ ESP would like to be able to keep track of how many of each item they have *in s
 
 When items are ordered from suppliers a Purchase Order is created. A sample Purchase Order is shown below.
 
-![Purchase Orders](./ESP-3-Purchase-Orders-View.png)
+[![Click for Editable Form - Inventory Control View](./ESP-3-Purchase-Orders-View.png)](./ESP-PurchaseOrders.md)
 
 Purchase Order (PO) numbers are unique and never reused. The same supplier always has the same *supplier number* (which *is also unique*) and the supplier details are hand-written on the PO every time.
 
