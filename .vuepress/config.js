@@ -20,7 +20,7 @@ module.exports = {
         lastUpdated: 'Last Updated', // string | boolean
         nav: [
             { text: 'Home', link: '/about/' },
-            { text: 'Normalization', link: '/Design/' },
+            { text: 'Database Design', link: '/Design/' },
             { text: 'DDL', link: '/DDL/' },
             { text: 'DML', link: '/DML/' },
             { text: 'SQL', link: '/SQL/' },
