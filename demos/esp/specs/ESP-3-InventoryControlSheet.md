@@ -1,8 +1,8 @@
 <form action="">
   <h1>Inventory Control Sheet</h1>
-  <input type="text" aria-label="Item Number" value="M24">
-  <input type="text" aria-label="Item Description" value="Bolts - 24mm">
-  <input type="text" aria-label="Current Sale Price" value="$ 0.29">
+  <label for="a">Item Number</label> <input id="a" type="text" aria-label="Item Number" value="M24">
+  <label for="b">Item Description</label> <input id="b" type="text" aria-label="Item Description" value="Bolts - 24mm">
+  <label for="c">Current Sale Price</label> <input id="c" type="text" aria-label="Current Sale Price" value="$ 0.29">
   <h2>Order History</h2>
   <table>
     <tr>

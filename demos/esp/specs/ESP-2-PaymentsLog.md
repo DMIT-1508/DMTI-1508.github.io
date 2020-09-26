@@ -1,13 +1,13 @@
-<h1>Customer Payments Agains Orders</h1>
+<h1>Customer Payments Against Orders</h1>
 <p>When customers make payments for their orders, those payments have been captured in a <b>Payments Log</b>.</p>
 
 <form>
   <h2 aria-label="Form Title">Payment Log</h2>
-  <input type="text" aria-label="Order Number" value="123">
-  <input type="text" aria-label="OrderDate" value="Jan 11, 1999">
-  <input type="text" aria-label="Order Total" value="$ 145.18">
-  <input type="text" aria-label="Customer Name" value="David Williams">
-  <input type="text" aria-label="Customer Number" value="78">
+  <label for="a">Order Number</label>                           <input id="a" type="text" aria-label="Order Number" value="123">
+  <label for="b">Order Date</label>                           <input id="b" type="text" aria-label="Order Date" value="Jan 11, 1999">
+  <label for="c">Order Total</label>                           <input id="c" type="text" aria-label="Order Total" value="$ 145.18">
+  <label for="d">Customer Name</label>                           <input id="d" type="text" aria-label="Customer Name" value="David Williams">
+  <label for="e">Customer Number</label>                           <input id="e" type="text" aria-label="Customer Number" value="78">
   <table>
     <tr>
       <th scope="col">Date</th>
@@ -42,11 +42,11 @@
 <hr />
 <form>
   <h2 aria-label="Form Title">Payment Log</h2>
-  <input type="text" aria-label="Order Number" value="135">
-  <input type="text" aria-label="OrderDate" value="Jan 14, 1999">
-  <input type="text" aria-label="Order Total" value="$ 45.62">
-  <input type="text" aria-label="Customer Name" value="Gerald Samson">
-  <input type="text" aria-label="Customer Number" value="29">
+  <label for="a">Order Number</label>    <input id="a" type="text" aria-label="Order Number" value="135">
+  <label for="b">Order Date</label>      <input id="b" type="text" aria-label="Order Date" value="Jan 14, 1999">
+  <label for="c">Order Total</label>     <input id="c" type="text" aria-label="Order Total" value="$ 45.62">
+  <label for="d">Customer Name</label>   <input id="d" type="text" aria-label="Customer Name" value="Gerald Samson">
+  <label for="e">Customer Number</label> <input id="e" type="text" aria-label="Customer Number" value="29">
   <table>
     <tr>
       <th scope="col">Date</th>
@@ -70,11 +70,11 @@
 <hr />
 <form>
   <h2 aria-label="Form Title">Payment Log</h2>
-  <input type="text" aria-label="Order Number" value="208">
-  <input type="text" aria-label="OrderDate" value="Jan 19, 1999">
-  <input type="text" aria-label="Order Total" value="$ 460.89">
-  <input type="text" aria-label="Customer Name" value="David Williams">
-  <input type="text" aria-label="Customer Number" value="78">
+  <label for="a">Order Number</label>    <input id="a" type="text" aria-label="Order Number" value="208">
+  <label for="b">Order Date</label>      <input id="b" type="text" aria-label="Order Date" value="Jan 19, 1999">
+  <label for="c">Order Total</label>     <input id="c" type="text" aria-label="Order Total" value="$ 460.89">
+  <label for="d">Customer Name</label>   <input id="d" type="text" aria-label="Customer Name" value="David Williams">
+  <label for="e">Customer Number</label> <input id="e" type="text" aria-label="Customer Number" value="78">
   <table>
     <tr>
       <th scope="col">Date</th>

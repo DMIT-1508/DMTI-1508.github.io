@@ -1,12 +1,12 @@
 <form action="">
   <h1>Purchase Order</h1>
-  <input type="text" aria-label="Purchase Order" value="125">
-  <input type="text" aria-label="Supplier Name" value="Nuts and Bolts">
-  <input type="text" aria-label="Supplier Number" value="7">
-  <input type="text" aria-label="Address" value="11123 - 114 Avenue">
-  <input type="text" aria-label="City" value="Edmonton, AB, T6G 4X1">
-  <input type="text" aria-label="Phone" value="488-2312">
-  <input type="text" aria-label="Date" value="July 1, 1998">
+  <label for="a">Purchase Order</label>  <input id="a" type="text" aria-label="Purchase Order" value="125">
+  <label for="b">Supplier Name</label>  <input id="b" type="text" aria-label="Supplier Name" value="Nuts and Bolts">
+  <label for="c">Supplier Number</label>  <input id="c" type="text" aria-label="Supplier Number" value="7">
+  <label for="d">Address</label>  <input id="d" type="text" aria-label="Address" value="11123 - 114 Avenue">
+  <label for="e">City</label>  <input id="e" type="text" aria-label="City" value="Edmonton, AB, T6G 4X1">
+  <label for="f">Phone</label>  <input id="f" type="text" aria-label="Phone" value="488-2312">
+  <label for="g">Date</label>  <input id="g" type="text" aria-label="Date" value="July 1, 1998">
   
   <table>
     <tr>
