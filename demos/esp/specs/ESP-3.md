@@ -5,6 +5,8 @@ title: V.3. Inventory
 
 The third specifications document for Emergency Service & Product (ESP) presented two additional paper-based forms: **Inventory Control Sheet** and **Purchase Orders**. This portion of the sample lab solution details how this form was analyzed and integrated into the database design from the previous documents. The styling conforms to the associated [Legend.md](normalization legend).
 
+> The markdown for this file can be found in the [source repository](https://raw.githubusercontent.com/DMIT-1508/DMIT-1508.github.io/dev/demos/esp/specs/ESP-3.md).
+
 ## Inventory Control Sheet
 
 The Inventory Control Sheet and its resulting tables are based on the following form (taken from the original documentation).

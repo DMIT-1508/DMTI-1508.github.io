@@ -3,6 +3,8 @@ title: Part 6
 ---
 # ESP - Part 6
 
+> The markdown for this file can be found in the [source repository](https://raw.githubusercontent.com/DMIT-1508/DMIT-1508.github.io/dev/demos/esp/specs/ESP-6-Specs.md).
+
 ## Pickup Driver Details View
 
 ESP has two employees in the city who do local parts pickup from their suppliers and receiving at the end of the day. Each driver covers a different area of the city, and they begin the morning by dividing the pickups and summarizing their pickup sheets. By mid-morning, they head out to do their pickups and they return by mid-afternoon, at which time they check in their pickup sheets and stock the shelves.

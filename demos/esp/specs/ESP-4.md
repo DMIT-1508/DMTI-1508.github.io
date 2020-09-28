@@ -3,6 +3,8 @@ title: V.4. Payments
 ---
 # ESP Document 4 - Payments to Suppliers
 
+> The markdown for this file can be found in the [source repository](https://raw.githubusercontent.com/DMIT-1508/DMIT-1508.github.io/dev/demos/esp/specs/ESP-4.md).
+
 ## Cheque Register
 
 The Cheque Register and its resulting tables are based on the following form (taken from the original documentation).

@@ -5,6 +5,8 @@ title: V.1. Customers
 
 This is a sample solution of normalizing the **Customer Details View** and the **Customer Orders View** in ESP Document 1. The styling conforms to the associated [Legend.md](normalization legend).
 
+> The markdown for this file can be found in the [source repository](https://raw.githubusercontent.com/DMIT-1508/DMIT-1508.github.io/dev/demos/esp/specs/ESP-1.md).
+
 ----
 
 ## Customer Details View

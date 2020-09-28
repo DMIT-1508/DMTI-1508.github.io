@@ -5,6 +5,8 @@ title: V.2. Customer Payments
 
 The second specifications document for Emergency Service & Product (ESP) presented one additional paper-based form: **Customer Payments Against Orders**. This portion of the sample lab solution details how this form was analyzed. The styling conforms to the associated [Legend.md](normalization legend).
 
+> The markdown for this file can be found in the [source repository](https://raw.githubusercontent.com/DMIT-1508/DMIT-1508.github.io/dev/demos/esp/specs/ESP-2.md).
+
 ## Customer Payments Against Orders
 
 The Customer Payments Against Orders and its resulting tables are based on the following form (taken from the original documentation).
