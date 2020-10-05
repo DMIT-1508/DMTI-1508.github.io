@@ -45,9 +45,28 @@ After performing First-Normal Form, a single table was generated: **PurchaseOrde
 
 When performing Third-Normal Form, no transitive dependencies were identified, and the tables have not changed.
 
-### ERD
-![](./ESP-3-ERD-Inventory-Control-View.png)
+### Final Set of Entities and ERD
 
+The final set of entities after completing Third-Normal-Form are as follows:
+
+**Inventory** (<b class="pk">ItemNumber</b>, ItemDescription, CurrentSalePrice, InStockCount, ReorderValue)
+
+**OrderHistory** (<b class="pk"><u class="fk">ItemNumber</u>, <u class="fk">PONumber</u></b>, Quantity, Cost)
+
+**PurchaseOrder** (<b class="pk">PONumber</b>, SupplierNumber, Date)
+
+The ERD for this view is as follows:
+
+![Inventory Control Sheet ERD](./ESP-3-ERD-Inventory-Control-View.png)
+
+Expressed in English, the relationships between the entities would read as follows.
+
+> Each **Inventory** item *must be* purchased as *one or more* **OrderHistories**. Each **OrderHistory** *must be* describing the purchase of *one and only one* **Inventory** item.
+> Each **OrderHistory** *must be* a detail in *one and only one* **PurchaseOrder**. Each **PurchaseOrder** *must be* comprised of *one or more* **OrderHistories**.
+
+::: warning Note
+Note that the name choices for your entities may make it difficult when translating the ERD to English.
+:::
 
 ----
 

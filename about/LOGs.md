@@ -73,7 +73,7 @@ At the end of this topic, you should be able to:
 - Translate your ERD diagram into English so that you can verify your logical analysis of the database with your client
 - Merge ERD diagrams from various views/forms into a single, cohesive logical ERD
 - Identify when to introduce technical keys into your normalized entities
-- Use Visio to draw ERD diagrams
+- Use a drawing tool to create ERD diagrams
 - Identify good practices for laying out entities in an ERD
 
 ## Introduction to SQL
