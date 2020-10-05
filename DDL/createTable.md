@@ -15,14 +15,16 @@ The CREATE TABLE statement defines a table object in the database. The Create Ta
 
 The basic syntax for the Create Table statement is shown below:
 
-```
-CREATE TABLE  [database_name. [owner]. table name (
-				
-{column name data type
-[IDENTITY [ (seed, increment)] | 
-[NULL | NOT NULL] 
-[<column constraints>] } [, . . . n]
-[<table constraints>]	  )
+```sql
+CREATE TABLE  [database_name.[owner.]]table_name
+(
+    {column_name data_type
+        [IDENTITY [ (seed, increment)] | 
+        [NULL | NOT NULL] 
+        [<column_constraints>] }
+    [, . . . n]
+    [<table_constraints>]
+)
 ```
 
 To begin with, we will look at a basic table definition that does not include the definition of constraints (column level or table level). Constraints will be dealt with later.
