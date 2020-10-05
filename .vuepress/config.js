@@ -119,7 +119,8 @@ module.exports = {
                 '',
                 'LOGs',
                 [ 'https://github.com/DMIT-1508/DMIT-1508.github.io/commits/dev',  'Change Log' ],
-                [ 'https://github.com/DMIT-1508/DMIT-1508.github.io/', 'Source on GitHub' ]
+                [ 'https://github.com/DMIT-1508/DMIT-1508.github.io/', 'Source on GitHub' ],
+                ['https://dmarshnait.github.io/dmit1508/', 'Dana Marsh SQL Reference Sheet']
                 // 'colophon',
                 // 'todo',
                 // 'markdown-syntax'

@@ -20,11 +20,11 @@ This site contains numerous examples and information that is available primarily
 
 For this course, you will need the following software installed on your machine.
 
-- [SQL Server 2017 Developer](https://www.microsoft.com/en-ca/sql-server/sql-server-downloads) Edition
+- [SQL Server 2019 Developer](https://www.microsoft.com/en-ca/sql-server/sql-server-downloads) Edition
   ![SQL Server Developer](./SQL-Developer.png)
 - [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017)
-- Visual Studio Code
-- GitHub Desktop
+- [Visual Studio Code](https://code.visualstudio.com)
+- [GitHub Desktop](https://desktop.github.com)
 
 Additionally, you will need a GitHub account to access labs and assignments for this course. A [**workbook template**](https://github.com/dgilleland/DMIT-1508-Workbook/generate) is also provided that offers samples and practice opportunities. 
 

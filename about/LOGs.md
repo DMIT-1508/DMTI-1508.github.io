@@ -91,11 +91,11 @@ At the end of this topic, you should be able to:
 At the end of this topic, you should be able to:
 
 - Describe the purpose of the DDL statements supported in the SQL programming language
-- Use SQL Server Management Studio to create and save SQL scripts
+- Use SQL Server Management Studio and/or Visual Studio Code to create, execute and save SQL scripts
 - Write the SQL to CREATE simple tables
 - Write the SQL to Drop tables
-- Run (Execute) SQL statements in SQL Server Management Studio to create and drop tables
-- Run (Execute) calls to sp_help to view information on objects such as database tables
+- Run (Execute) SQL statements to create and drop tables
+- Run (Execute) calls to `sp_help` to view information on objects such as database tables
 - Describe and give examples of Column Constraints
 - Describe and give examples of Table Constraints
 - Write the SQL to specify Column Constraints for columns which function as Primary Keys and Foreign Keys
